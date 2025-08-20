@@ -12,7 +12,9 @@ class Booking(models.Model):
     package = models.CharField(max_length=50)
     date = models.DateField()
     time = models.TimeField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(
+        auto_now_add=True
+    )  # auto_now_add added to automatically populate this info
 
     def __str__(self):
-        return f"{self.name} - {self.package} on {self.date}"  # auto_now_add added to automatically populate this info
+        return f"{self.name} - {self.package} on {self.date}"
