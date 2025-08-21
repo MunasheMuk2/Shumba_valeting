@@ -1,9 +1,13 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-
-
-# Create your views here.
+from django.shortcuts import render, redirect
+from .forms import BookingForm
 
 
 def home(request):
-    return HttpResponse("Hello, This is my new app!")
+    if request.method == "POST":
+        form = BookingForm(request.POST)
+        if form.is_valid():
+            form.save()  # save booking into PostgreSQL
+            return redirect("home")  # reload after success
+    else:
+        form = BookingForm()
+    return render(request, "home.html", {"form": form})

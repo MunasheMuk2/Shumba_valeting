@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shumba Valeting</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Shumba Valeting</h1>
+        <p>Luxury car care in style 🚘✨</p>
+    </header>
+
+    <main>
+        <h2>Book Your Valet</h2>
+        <form method="post" class="booking-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+    </main>
+</body>
+</html>
