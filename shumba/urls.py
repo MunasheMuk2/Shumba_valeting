@@ -15,6 +15,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+# Create URL that allows us to connect to our application
+
 from django.contrib import admin
 from django.urls import path, include
 from bookings.views import home
@@ -22,5 +24,7 @@ from bookings.views import home
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("bookings.urls")),
+    path(
+        "", include("bookings.urls")
+    ),  # whenever we go to the empty string. I want to forward all of the different URLS to bookings urls
 ]

@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .forms import BookingForm
 
+# create different routes to access on our websites
+
 
 def home(request):
     if request.method == "POST":
