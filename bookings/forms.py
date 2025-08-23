@@ -9,6 +9,6 @@ class BookingForm(forms.ModelForm):
         # Date widget from - https://www.geeksforgeeks.org/python/django-form-field-custom-widgets/
         # time field - https://studygyaan.com/django/date-picker-in-django#google_vignette
         widgets = {
-            "date": forms.SelectDateWidget(),
-            "time": forms.TimeInput(attrs={"type": "time"}),  # clock picker
+            "date": forms.DateInput(attrs={"type": "date"}),
+            "time": forms.TimeInput(attrs={"type": "time"}),
         }

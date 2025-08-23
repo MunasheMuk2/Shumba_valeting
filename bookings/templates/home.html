@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Shumba Valeting</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Bootstrap CSS Link -->
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -42,13 +44,17 @@
       </nav>
     
     <header>
-      <h1>Welcome to Shumba Valeting</h1>
+      <h1 class="welcome">Welcome to Shumba Valeting</h1>
       <p>Luxury car care in style</p>
     </header>
 
     <main>
-      <h2>Book Your Valet</h2>
       <form method="post" class="booking-form">
+        <h2>Book Your Valet</h2>
+        <div class="booking-notice">
+            This form is for <strong>car valeting only</strong>.  
+            For other vehicles, pick <strong>Other</strong> in packages and send us details.
+        </div>
         {% csrf_token %} {{ form.as_p }}
         <button type="submit" class="btn">Submit Booking</button>
       </form>
