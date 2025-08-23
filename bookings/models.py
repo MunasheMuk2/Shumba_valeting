@@ -21,7 +21,6 @@ class Booking(models.Model):
     package = models.ForeignKey(
         Package, on_delete=models.CASCADE
     )  # now linked to package model
-    package = models.CharField(max_length=50)
     date = models.DateField()
     time = models.TimeField()
     created_at = models.DateTimeField(

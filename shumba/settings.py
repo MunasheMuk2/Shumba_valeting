@@ -34,7 +34,7 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definitiongit
 
 INSTALLED_APPS = [
     "django.contrib.admin",
