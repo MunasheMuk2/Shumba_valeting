@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class Package(models.Model):
     name = models.CharField(max_length=50)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
+    price = models.DecimalField(max_digits=6, decimal_places=2, null=False)
 
     def __str__(self):
         return f"{self.name} - £{self.price}"

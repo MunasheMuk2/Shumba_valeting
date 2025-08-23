@@ -30,13 +30,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link " href="#">Login</a>
               </li>
             </ul>
           </div>
@@ -52,8 +52,8 @@
       <form method="post" class="booking-form">
         <h2>Book Your Valet</h2>
         <div class="booking-notice">
-            This form is for <strong>car valeting only</strong>.  
-            For other vehicles, pick <strong>Other</strong> in packages and send us details.
+            TThis form is for <strong>car valeting only</strong>.  
+            For other vehicles, please <a href="/contact"><strong>contact us</strong></a> and we will confirm your details & advise on pricing.
         </div>
         {% csrf_token %} {{ form.as_p }}
         <button type="submit" class="btn">Submit Booking</button>
