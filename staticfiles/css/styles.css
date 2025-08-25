@@ -51,5 +51,36 @@ nav.navbar {
 /* login page */
 
 
+/* For background color to buttons when clicked (added the .active class with JS) */
+.active, .accordion:hover {
+    background: #000; /* black background */
+    color: #fff; }
 
-/* Logour page */
+.accordion {
+    border:none;
+    background-color:black;
+    color:white;
+    width:100%;
+    text-align:left;
+
+}
+
+.panel{
+display:none;
+}
+
+
+
+  /* code amended from W3schools */
+
+.accordion::after {
+content: "+"; /* To show plus sign originally */
+float: right;
+margin-left: 10px;
+font-size: 20px;
+}
+
+/* When active */
+.accordion.active::after {
+  content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
