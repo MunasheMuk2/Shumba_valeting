@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-4 offset-md-2 text-center">
+            <h2 class="mb-3">Sign In to <span class="text-silver">Shumba Valeting</span></h2>
+
+            <p>
+                {% blocktrans %}
+                    Welcome back to Shumba Valeting!  
+                    To book a service or manage your account, please log in.  
+                    Don’t have an account yet? <a class="link" href="{{ signup_url }}">Sign up here</a>.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mt-3 offset-md-3">
+            <form class="login card p-4 shadow-sm" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <a href="{% url 'account_reset_password' %}" class="small">{% trans "Forgot Password?" %}</a>
+                    <button class="btn btn-primary px-4" type="submit">{% trans "Sign In" %}</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

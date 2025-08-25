@@ -13,6 +13,14 @@ class Package(models.Model):
         return f"{self.name} - £{self.price}"
 
 
+TIME_SLOTS = [
+    ("09-11", "9am - 11am"),
+    ("11-13", "11am - 1pm"),
+    ("13-15", "1pm - 3pm"),
+    ("15-17", "3pm - 5pm"),
+]
+
+
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=100)
@@ -22,12 +30,16 @@ class Booking(models.Model):
         Package, on_delete=models.CASCADE
     )  # now linked to package model
     date = models.DateField()
-    time = models.TimeField()
+    time_slot = models.CharField(max_length=10, choices=TIME_SLOTS)
     created_at = models.DateTimeField(
         auto_now_add=True
     )  # auto_now_add added to automatically populate this info
 
+    class Meta:
+        unique_together = ("date", "time_slot")  # Prevents double booking of a slot
+
     def __str__(self):
         return (
-            f"{self.name} - {self.package.name} (£{self.package.price}) on {self.date}"
+            f"{self.name} - {self.package.name} (£{self.package.price}) "
+            f"on {self.date} at {self.get_time_slot_display()}"
         )
