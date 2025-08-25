@@ -1,109 +1,21 @@
-{% load static %}
-{% url 'account_login' as login_url %}
-{% url 'account_signup' as signup_url %}
-{% url 'account_logout' as logout_url %}
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Shumba Valeting</title>
-    
-    <!-- Bootstrap CSS -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-        crossorigin="anonymous"
-    >
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
+{% block title %}Home - Shumba Valeting{% endblock %}
 
-<!-- Navbar -->
-<!-- Bootsrtap Nav bar-->
-
-<nav class="navbar nav-color navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="{% static 'css/images/lion.png' %}" alt="Logo" width="33" height="33" class="d-inline-block align-text-top lion">
-        Shumba Valeting</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-         
-
-          <!-- Auth links -->
-           {% if user.is_authenticated %}
-           <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
-          </li>
-        {% endif %}
-      
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-<!-- Header -->
-<header class="text-center my-4">
-    <h1>Welcome to Shumba Valeting</h1>
-    <p>Luxury car care in style</p>
-</header>
-
-<!-- Booking Form -->
-<main class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <form method="post" class="booking-form">
-              <h2>Book Your Valet</h2>
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form method="post" class="booking-form">
+            <h2>Book Your Valet</h2>
             <p>
                 This form is for <strong>car valeting only</strong>.<br>
                 For other vehicles, please 
-                <a href="/contact"><strong>contact us</strong></a> 
-                and we will confirm your details & advise on pricing.
+                <a href="/contact"><strong>contact us</strong></a>.
             </p>
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="btn btn-primary w-100 mt-2">Submit Booking</button>
-            </form>
-        </div>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary w-100 mt-2">Submit Booking</button>
+        </form>
     </div>
-</main>
-
-<!-- Messages for JavaScript -->
-<div id="messages" data-messages='{% for message in messages %}{{ message|escapejs }}|{% endfor %}'></div>
-
-<!-- Bootstrap JS Bundle -->
-<script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
-    crossorigin="anonymous">
-</script>
-
-<!-- Custom JS -->
-<script src="{% static 'js/script.js' %}"></script>
-
-</body>
-</html>
+</div>
+{% endblock %}

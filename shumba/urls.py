@@ -28,4 +28,5 @@ urlpatterns = [
         "", include("bookings.urls")
     ),  # whenever we go to the empty string. I want to forward all of the different URLS to bookings urls
     path("accounts/", include("allauth.urls")),
+    path("", include("bookings.urls")),
 ]

@@ -35,6 +35,8 @@ class Booking(models.Model):
         auto_now_add=True
     )  # auto_now_add added to automatically populate this info
 
+    cancelled = models.BooleanField(default=False)
+
     class Meta:
         unique_together = ("date", "time_slot")  # Prevents double booking of a slot
 
