@@ -1,3 +1,17 @@
+
+/* Navbar */
+
+nav.navbar {
+    background-color: #000 !important;
+}
+
+#log{
+    padding-left:10px;
+    color:red;
+}
+
+/* Booking form */
+
 .booking-form {
     background: #000; /* black background */
     color: #fff;      /* white text */
@@ -43,22 +57,16 @@
     color: #000;
 }
 
-
-nav.navbar {
-    background-color: #000 !important;
-}
-
-/* login page */
-
-
 /* For background color to buttons when clicked (added the .active class with JS) */
 .active, .accordion:hover {
-    background: #000; /* black background */
-    color: #fff; }
+    background-color: #ccc;
+    color: #000
+
+}
 
 .accordion {
     border:none;
-    background-color:black;
+    background-color:red;
     color:white;
     width:100%;
     text-align:left;
@@ -68,8 +76,6 @@ nav.navbar {
 .panel{
 display:none;
 }
-
-
 
   /* code amended from W3schools */
 
