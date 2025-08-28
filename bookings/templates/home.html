@@ -1,44 +1,96 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% load static %} {% block title %}Home - Shumba
+Valeting{% endblock %} {% block content %}
 
-{% block title %}Home - Shumba Valeting{% endblock %}
-
-{% block content %}
+<section>
 <div class="row justify-content-center">
-    <div class="col-md-6">
-      <!-- Frequently asked questions and answers section-->
+  <div class="col-md-6">
+    <!-- Frequently asked questions and answers section-->
     <div class="faq">
-      <h2>FAQ </h2>
-      <p>Here are some answers to commonly asked questions about pallet loads. </p>
-      <button class="accordion"> What is a standard pallet size? </button>
+      <h2>FAQ</h2>
+      <p>
+        Here are some answers to commonly asked questions about mobile valeting.
+      </p>
+      <button class="accordion">Do I need to provide parking?</button>
       <div class="panel">
-        <p>Most standard pallets used in the UK and EU measure 1200mm x 1000mm or 1200mm x 800mm. Dimensions may vary by
-          region or industry.
+        <p>
+          Yes. While our teams are more than happy to clean your car wherever
+          you are, they will need sufficient space to complete the job. Please
+          ensure there’s room for our professionals to work.
         </p>
       </div>
-      <button class="accordion"> How much weight can a pallet hold? </button>
+      <button class="accordion">Do I have to provide water?</button>
       <div class="panel">
-        <p> Wooden pallets typically support up to 1000kg and plastic pallets vary between 500kg and 1500kg. Always
-          check manufacturer specs for safety.
+        <p>
+          The majority of our onboarded washers will provide water for your
+          valet or detail. However, there maybe some who will require access to
+          water. You can filter your results to only show operators who provide
+          water.
         </p>
       </div>
-      <button class="accordion" id="third"> Do pallet loads need to be shrink-wrapped?</button>
+      <button class="accordion">Can I leave a review for my car washer?</button>
       <div class="panel">
-        <p> Yes—especially for transportation to secure items and minimise shifting or damage.</p>
+        <p>
+          Yes! We encourage every customer to leave a review after your car
+          wash.
+        </p>
+      </div>
+      <button class="accordion" id="third">
+        Do I have to provide electricity?
+      </button>
+      <div class="panel">
+        <p>
+          No, we will provide power for your valet or detail. However, there
+          maybe the odd exception when we may require access to electricity.
+        </p>
       </div>
     </div>
+  </section>
+  
+<section>
+    <div class="container my-4 text-center">
+      <div class="row">
+        <figure class="col-md-4">
+          <img
+            src="{% static 'images/car image.png' %}"
+            class="img-fluid rounded mb-2"
+            alt="Service 1"
+          />
+          <figcaption><h2>Exterior valeting</h2></figcaption>
+        </figure>
+        <figure class="col-md-4">
+          <img
+            src="{% static 'images/seat.png' %}"
+            class="img-fluid rounded mb-2"
+            alt="Service 2"
+          />
+          <figcaption><h2>Interior valeting</h2></figcaption>
+        </figure>
+        <figure class="col-md-4">
+          <img
+            src="{% static 'images/engine.png' %}"
+            class="img-fluid rounded mb-2"
+            alt="Service 3"
+          />
+          <figcaption><h2>Engine valeting</h2></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
     <!-- Form-->
-        <form method="post" class="booking-form">
-            <h2>Book Your Valet</h2>
-            <p>
-                This form is for <strong>car valeting only</strong>.<br>
-                For other vehicles, please 
-                <a href="/contact"><strong>contact us</strong></a>.
-            </p>
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-primary w-100 mt-2">Submit Booking</button>
-        </form>
-    </div>
+    <form method="post" class="booking-form">
+      <h2>Book Your Valet</h2>
+      <p>
+        This form is for <strong>car valeting only</strong>.<br />
+        For other vehicles, please
+        <a href="/contact"><strong>contact us</strong></a
+        >.
+      </p>
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit" class="btn btn-primary w-100 mt-2">
+        Submit Booking
+      </button>
+    </form>
+  </div>
 </div>
 {% endblock %}

@@ -72,6 +72,13 @@ nav.navbar {
     height: auto;
     display: inline-block;
 }
+
+/* Services  */
+
+.img-fluid {
+    width:250px;
+    height:250px;
+}
 /* Booking form */
 
 .booking-form {
@@ -151,4 +158,29 @@ font-size: 20px;
 /* When active */
 .accordion.active::after {
   content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
+
+@media only screen and (max-width: 575.98px) {
+
+
+.nav-item {
+        display: flex !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin:auto !important;
+    }
+
+.nav-left{
+        padding-right:3rem !important;
+    }
+
+.faq {
+    width:80% !important;
+    margin:auto !important;
+}
+
+.booking-form {
+    width:80% !important;
+}
+
 }
