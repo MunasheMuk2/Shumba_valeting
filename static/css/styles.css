@@ -61,6 +61,17 @@ nav.navbar {
     text-align: left;
 }
 
+/* Nav image  */
+.nav-image-wrapper {
+    width: 100%;
+    text-align: center;  /* centers image if not full width */
+}
+
+.nav-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
 /* Booking form */
 
 .booking-form {

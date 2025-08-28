@@ -57,9 +57,15 @@
           {% endif %}
         </ul>
       </div>
-      
-    </div>
-</nav>
+    </nav> <!-- Close the navbar properly -->
+    
+    {% block nav_image %}
+      <div class="nav-image-wrapper">
+        <img src="{% static 'images/car.png' %}" alt="Wheel Cleaning" class="nav-image">
+      </div>
+    {% endblock %}
+    
+
 
 <!-- Header -->
 <header class="text-center my-4">
