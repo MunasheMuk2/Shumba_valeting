@@ -3,17 +3,27 @@
 
 /*Wildcard selector to change browser default styles */
 
-/* *{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
-} */
+}
 
 /* General styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 
 body{
     min-height: 100vh;
     width:100%;
+    flex: 1;
+
 }
 
 h1, h2, h3 {
@@ -74,7 +84,11 @@ nav.navbar {
 }
 
 .main-section{
-    margin-top:1rem;
+    margin-top:-2rem;
+    background-color:silver;
+    color:black;
+    border-radius: 10px 30px 30px 60px;
+    padding: 30px 20px 50px 10px;
 }
 
 .main-header{
@@ -83,16 +97,33 @@ nav.navbar {
 }
 
 .main-button {
-        background: black;
-        color: white;
-        padding: 8px;
-        margin-bottom: 4rem;
-        border: none;
+        color:white;
+        background-color: black;
+        border:2px solid black;
+        padding: 6px;
+        margin-bottom: 3rem;
+        border: 2px solid black;
         font-size: 1rem;
         border-radius: 6px;
         cursor: pointer;
         margin: 0 auto;
         display: block;
+}
+
+.whatsapp-button {
+    color:white;
+    background-color: black;
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top:2rem;
+    /* margin: 0 auto; */
+    /* display: block; */
+    width:175px;
+    text-align:center;
+
 }
 
 
@@ -107,6 +138,30 @@ nav.navbar {
     width:250px;
     height:250px;
 }
+
+.main-services{
+    background-color:black;
+    color:white;
+}
+
+.services{
+    font-size:20px;
+}
+
+.schedule {
+    margin-top:1rem;
+}
+
+.gallery{
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.gallery-header{
+    text-align:center;
+}
+
+
 /* Booking form */
 
 .booking-form {
@@ -118,6 +173,7 @@ nav.navbar {
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     font-size: 0.9rem; /* more compact text */
+    margin-bottom:2rem;
 }
 
 /* Default input styling */
@@ -186,6 +242,15 @@ font-size: 20px;
 /* When active */
 .accordion.active::after {
   content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
+
+.footer { 
+    background-color:black;
+    width:100%;
+    height: 2.5rem;
+    margin-top: auto;
+    color: white;
+
 }
 
 @media only screen and (max-width: 575.98px) {

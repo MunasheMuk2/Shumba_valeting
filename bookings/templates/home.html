@@ -65,38 +65,40 @@ Valeting{% endblock %} {% block content %}
       </div>
     </section>
 
-      <section>
+      <section class="main-services">
+        <h2> Our services</h2>
         <div class="container my-4 text-center">
           <div class="row">
             <figure class="col-md-4">
+              <figcaption><h2 class="services">Exterior valeting</h2></figcaption>
               <img
                 src="{% static 'images/car image.png' %}"
                 class="img-fluid rounded mb-2"
                 alt="Service 1"
               />
-              <figcaption><h2>Exterior valeting</h2></figcaption>
             </figure>
             <figure class="col-md-4">
+              <figcaption><h2 class="services">Interior valeting</h2></figcaption>
               <img
                 src="{% static 'images/seat.png' %}"
                 class="img-fluid rounded mb-2"
                 alt="Service 2"
               />
-              <figcaption><h2>Interior valeting</h2></figcaption>
             </figure>
             <figure class="col-md-4">
+              <figcaption><h2 class="services">Engine valeting</h2></figcaption>
               <img
                 src="{% static 'images/engine.png' %}"
                 class="img-fluid rounded mb-2"
                 alt="Service 3"
               />
-              <figcaption><h2>Engine valeting</h2></figcaption>
             </figure>
           </div>
         </div>
       </section>
 
       <section class="gallery">
+        <h2 class="gallery-header"> Gallery</h2>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -165,6 +167,11 @@ Valeting{% endblock %} {% block content %}
       </section>
 
       <!-- Form-->
+
+        <section> 
+        <div class="schedule"> 
+          <h2> Schedule Your Appointment today</h2>
+        </div>
       <form method="post" class="booking-form" id="bottom">
         <h2>Book Your Valet</h2>
         <p>
@@ -178,6 +185,7 @@ Valeting{% endblock %} {% block content %}
           Submit Booking
         </button>
       </form>
+    </section>
     </div>
   </div>
   {% endblock %}
