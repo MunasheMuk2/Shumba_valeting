@@ -83,6 +83,8 @@ nav.navbar {
     display: inline-block;
 }
 
+/* Body */
+
 .main-section{
     margin-top:-2rem;
 }
@@ -117,29 +119,26 @@ nav.navbar {
     height: 300px; 
 }
 
-.whatsapp-button {
-    color:white;
-    background-color: black;
-    padding: 8px;
-    margin-bottom: 1rem;
-    border: none;
-    font-size: 15px;
-    border-radius: 3px;
-    margin-top:2rem;
-    /* margin: 0 auto; */
-    /* display: block; */
-    width:175px;
+/* Gallery */
+
+.gallery{
+    width:700px;
+    height:700px;
+    margin-top:4rem;
+    margin-left: 18rem;
+}
+
+.gallery-header{
     text-align:center;
-
 }
 
+/* Service benefits */
 
-.questions{
-    margin-bottom:2rem;
-    margin-top:2rem;
+.benefits{
+    margin-top:-13rem;
 }
 
-/* Services  */
+/* Our Services  */
 
 .img-fluid {
     width:250px;
@@ -153,6 +152,25 @@ nav.navbar {
 
 .services{
     font-size:20px;
+}
+
+
+/* FAQ */
+
+.questions{
+    margin-top:1rem;
+}
+
+
+/* Booking section*/
+
+.booking-header{
+    margin-top:8rem;
+    margin-left:25rem;
+}
+
+.booking-tagline{
+    margin-left:11rem;
 }
 
 .schedule-header{
@@ -172,21 +190,22 @@ nav.navbar {
 
 }
 
-.gallery{
-    width:700px;
-    height:700px;
-    margin-top:4rem;
-    margin-left: 18rem;
-}
-
-.gallery-header{
+.whatsapp-button {
+    color:white;
+    background-color: black;
+    padding: 8px;
+    margin-bottom: 1rem;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top:2rem;
+    /* margin: 0 auto; */
+    /* display: block; */
+    width:175px;
     text-align:center;
-}
+    text-decoration:none;
 
-.benefits{
-    text-align:center;
 }
-
 
 /* Booking form */
 
