@@ -24,11 +24,8 @@ from bookings.views import home
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path(
-        "", include("bookings.urls")
-    ),  # whenever we go to the empty string. I want to forward all of the different URLS to bookings urls
+    path("", include("bookings.urls")),  # Root forwards to bookings
     path("accounts/", include("allauth.urls")),
-    path("", include("bookings.urls")),
     path("contact/", include("contact.urls")),
     path("services/", include("services.urls")),
 ]

@@ -85,16 +85,17 @@ nav.navbar {
 
 .main-section{
     margin-top:-2rem;
-    background-color:silver;
-    color:black;
-    border-radius: 10px 30px 30px 60px;
-    padding: 30px 20px 50px 10px;
 }
 
 .main-header{
     font-size:20px;
     text-align:center;
 }
+
+/* .main-text{
+    text-wrap: nowrap;
+    text-align: center;
+} */
 
 .main-button {
         color:white;
@@ -108,6 +109,12 @@ nav.navbar {
         cursor: pointer;
         margin: 0 auto;
         display: block;
+}
+
+.main-image{
+    float:right !important;
+    width: 480px;
+    height: 300px; 
 }
 
 .whatsapp-button {
@@ -148,16 +155,35 @@ nav.navbar {
     font-size:20px;
 }
 
+.schedule-header{
+    margin-top:15rem;
+    text-wrap:wrap;
+    width:20%;
+}
+
+.form{
+    width:70%;
+}
+
 .schedule {
-    margin-top:1rem;
+    /* margin-top:1rem; */
+    display:flex;
+    flex-direction:row;
+
 }
 
 .gallery{
-    margin-top: -10px;
-    margin-bottom: 10px;
+    width:700px;
+    height:700px;
+    margin-top:4rem;
+    margin-left: 18rem;
 }
 
 .gallery-header{
+    text-align:center;
+}
+
+.benefits{
     text-align:center;
 }
 
@@ -174,6 +200,7 @@ nav.navbar {
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     font-size: 0.9rem; /* more compact text */
     margin-bottom:2rem;
+    width:70%;
 }
 
 /* Default input styling */
@@ -266,6 +293,7 @@ font-size: 20px;
 .nav-left{
         padding-right:3rem !important;
     }
+
 
 .faq {
     width:80% !important;
