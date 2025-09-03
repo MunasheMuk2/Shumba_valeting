@@ -125,8 +125,11 @@ nav.navbar {
 .gallery{
     width:700px;
     height:700px;
-    margin-top:4rem;
-    margin-left: 18rem;
+    /* margin-top:5rem;
+    margin-left: 18rem; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3rem !important;
 }
 
 .gallery-header{
@@ -312,11 +315,16 @@ font-size: 20px;
         margin: auto;
 }
 
+    .schedule-title{
+        display:none;
+    }
+
     .schedule-header,
     .form {
     width: 90% !important;
     margin-left: 0 !important;
     text-align: center;
+    margin-top:3rem;
     }
 
     .booking-header,
@@ -336,12 +344,12 @@ font-size: 20px;
     }
 
     .benefits {
-    margin-top: 2rem !important;
+    margin-bottom: 10rem !important;
     }
 } 
 
 
-@media only screen and (max-width: 575.98px) {
+/* @media only screen and (max-width: 575.98px) {
 
 
 .nav-item {
@@ -362,8 +370,8 @@ font-size: 20px;
 }
 
 .schedule {
-    justify-content: center !important;   /* Horizontal centering */
-    align-items: center !important;       /* Vertical centering */
+    justify-content: center !important;   
+    align-items: center !important;       
     margin:auto !important;
 }
 
@@ -373,4 +381,4 @@ font-size: 20px;
 
 
 
-}
+} */
