@@ -16,6 +16,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100% !important;
 }
 
 
@@ -184,12 +185,7 @@ nav.navbar {
     width:70%;
 }
 
-.schedule {
-    /* margin-top:1rem; */
-    display:flex;
-    flex-direction:row;
 
-}
 
 .whatsapp-button {
     color:white;
@@ -209,6 +205,13 @@ nav.navbar {
 
 /* Booking form */
 
+.schedule {
+    /* margin-top:1rem; */
+    display:flex;
+    flex-direction:row;
+
+}
+
 .booking-form {
     background: #000; /* black background */
     color: #fff;      /* white text */
@@ -219,7 +222,7 @@ nav.navbar {
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
     font-size: 0.9rem; /* more compact text */
     margin-bottom:2rem;
-    width:70%;
+    width:100%;
 }
 
 /* Default input styling */
@@ -299,6 +302,45 @@ font-size: 20px;
 
 }
 
+@media only screen and (max-width: 1036px) {
+    .schedule {
+        display: flex;
+        flex-direction: column; /* stack vertically */
+        align-items: center;     /* center horizontally */
+        justify-content: center; /* center vertically if needed */
+        width: 100%;
+        margin: auto;
+}
+
+    .schedule-header,
+    .form {
+    width: 90% !important;
+    margin-left: 0 !important;
+    text-align: center;
+    }
+
+    .booking-header,
+    .booking-tagline {
+    margin-left: 0 !important;
+    text-align: center;
+    }
+
+    .whatsapp-button {
+    margin-top: 2rem !important;
+    }
+
+    .gallery {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+
+    .benefits {
+    margin-top: 2rem !important;
+    }
+} 
+
+
 @media only screen and (max-width: 575.98px) {
 
 
@@ -319,8 +361,16 @@ font-size: 20px;
     margin:auto !important;
 }
 
-.booking-form {
-    width:80% !important;
+.schedule {
+    justify-content: center !important;   /* Horizontal centering */
+    align-items: center !important;       /* Vertical centering */
+    margin:auto !important;
 }
+
+.booking-form {
+    width:90% !important;
+}
+
+
 
 }
