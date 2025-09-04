@@ -28,4 +28,5 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path("contact/", include("contact.urls")),
     path("services/", include("services.urls")),
+    path("", include("bookings.urls")),  # this connects app urls
 ]

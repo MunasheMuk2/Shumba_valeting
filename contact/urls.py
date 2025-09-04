@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import contact_view
+from . import views
 
 
 # Place URL routes and then connect them to our views
 
 urlpatterns = [
-    path("", contact_view, name="contact"),
+    path("contact/", views.contact_view, name="contact"),
 ]
