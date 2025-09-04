@@ -81,10 +81,16 @@
     {% block content %}{% endblock %}
 </main>
 
-<footer>
+<footer class="footer">
+  <nav class="footer-nav">
     <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'services' %}">Services</a>
     <a href="{% url 'contact' %}">Contact</a>
+    <a href="https://wa.me/447700900123?text=Hi%20Shumba%20Valeting,%20I%20would%20like%20to%20book%20a%20valet."
+        target="_blank">
+        <i class="fab fa-whatsapp"></i> Book via WhatsApp
+      </a>
+  </nav>
 </footer>
 
 

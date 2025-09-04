@@ -326,7 +326,7 @@ font-size: 20px;
 }
 
 .footer { 
-    position: fixed; /*position, left and bottom - make the footer stay at the bottom*/
+    position: relative; /*position, left and bottom - make the footer stay at the bottom*/
     left: 0;
     bottom: 0;
     background-color:black;
@@ -334,9 +334,19 @@ font-size: 20px;
     height: 2.5rem;
     margin-top: auto;
     color: white;
+    text-decoration: none;
+    padding-top:15px;
+    padding-bottom:30px;
+    font-size:12px;
+    text-wrap:nowrap;
 
 }
 
+.footer-nav a {
+    text-decoration: none;
+    color:white;
+    margin-left:1rem;
+}
 
 @media only screen and (max-width: 1036px) {
 
