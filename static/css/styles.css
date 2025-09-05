@@ -352,7 +352,7 @@ font-size: 20px;
 
 /* Contact Page Styling - Shumba Valeting */
 
-.contact-container {
+/* .contact-container {
     background-color: black; 
     padding: 30px;
     border-radius: 15px;
@@ -407,7 +407,7 @@ font-size: 20px;
     background-color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-}
+} */
 
 
 @media only screen and (max-width: 1036px) {
