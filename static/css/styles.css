@@ -350,6 +350,23 @@ font-size: 20px;
 
 }
 
+/* Services page */
+
+.services-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-section {
+    padding: 60px 20px;
+    background-color: #111; /* luxury dark background */
+    color: #fff;
+    text-align: center;
+}
+
 /* Contact page */
 
 
