@@ -25,15 +25,12 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    car_type = models.CharField(max_length=100)
-    package = models.ForeignKey(
-        Package, on_delete=models.CASCADE
-    )  # now linked to package model
+    car_make_model = models.CharField(max_length=150)  # renamed field
+    car_reg = models.CharField(max_length=20, null=True, blank=True)  # new field
+    package = models.ForeignKey(Package, on_delete=models.CASCADE)
     date = models.DateField()
     time_slot = models.CharField(max_length=10, choices=TIME_SLOTS)
-    created_at = models.DateTimeField(
-        auto_now_add=True
-    )  # auto_now_add added to automatically populate this info
+    created_at = models.DateTimeField(auto_now_add=True)
 
     cancelled = models.BooleanField(default=False)
 
