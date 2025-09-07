@@ -387,6 +387,10 @@ font-size: 20px;
     display: block;
 }
 
+.service-card h2 {
+    margin-top:2rem;
+}
+
 .services-button{
     color:black;
     background-color: silver;
