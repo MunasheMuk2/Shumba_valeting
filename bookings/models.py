@@ -25,7 +25,12 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    car_make_model = models.CharField(max_length=150)  # renamed field
+    car_make_model = models.CharField(
+        "Car Make & Model",
+        max_length=150,
+        default="",
+        help_text="e.g. Toyota Hilux, BMW 3 Series",
+    )
     car_reg = models.CharField(max_length=20, null=True, blank=True)  # new field
     package = models.ForeignKey(Package, on_delete=models.CASCADE)
     date = models.DateField()
