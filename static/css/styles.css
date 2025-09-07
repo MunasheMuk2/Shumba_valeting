@@ -393,7 +393,10 @@ font-size: 20px;
     font-size: 1rem;
 }
 
-
+.contact-form button:hover{
+    background: #fff;
+    color: #000;
+}
 
 /* Contact Page Styling - Shumba Valeting */
 
