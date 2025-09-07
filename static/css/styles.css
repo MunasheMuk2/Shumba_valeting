@@ -352,6 +352,14 @@ font-size: 20px;
 
 /* Services page */
 
+.services-section {
+    padding: 60px 20px;
+    background-color: #111; 
+    color: #fff;
+    text-align: center;
+    margin-bottom:3rem;
+}
+
 .services-grid {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
@@ -360,17 +368,26 @@ font-size: 20px;
     margin: 0 auto;
 }
 
-.services-section {
-    padding: 60px 20px;
-    background-color: #111; /* luxury dark background */
-    color: #fff;
-    text-align: center;
-}
-
 .services-images{
     width:400px;
     height:300px;
 }
+
+.services-button{
+    color:black;
+    background-color: silver;
+    padding: 8px;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    margin: 0 auto;
+    /* display: block; */
+    width:175px;
+    text-align:center;
+    text-decoration:none;
+}
+
+
 /* Contact page */
 
 
