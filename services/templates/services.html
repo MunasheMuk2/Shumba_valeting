@@ -1,4 +1,5 @@
 {% extends "base.html"%}
+{% load static %}
 
 {% block title%} Services - Shumba Valeting {%endblock%}
 
@@ -12,8 +13,20 @@
     <h1 class="services-heading">Our Valet Packages</h1>
     <p class="services-subtitle">Choose the perfect valet service for your car</p>
 
+    <div class="services-grid">
+        <!-- Basic Valet -->
+        <div class="service-card">
+            <img src="{% static 'images/brush.jpg' %}" alt="Basic Valet">
+            <h2>Basic Valet</h2>
+            <p class="price">£25</p>
+            <p class="description">A quick refresh including exterior wash and interior vacuum.</p>
+        </div>
+
     <button> 
         <a href="{% url 'home' %}#bottom" class="btn">Book Now</a>
     </button>
+
+</div>
+</section>
 
 {%endblock%}
