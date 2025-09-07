@@ -394,13 +394,13 @@ font-size: 20px;
 .services-button{
     color:black;
     background-color: silver;
-    padding: 8px;
+    padding: 2px;
     border: none;
     font-size: 15px;
     border-radius: 3px;
     margin: 0 auto;
     /* display: block; */
-    width:175px;
+    width:155px;
     text-align:center;
     text-decoration:none;
 }
@@ -567,6 +567,14 @@ font-size: 20px;
 
     .questions{
         margin-top:12rem;
+    }
+
+    /* Services page */
+
+    .services-button{
+        padding: 0px;
+        font-size: 15px;
+        width:155px;
     }
 
 } 
