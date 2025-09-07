@@ -27,5 +27,14 @@
         </div>
         <button type="submit">Send Message</button>
     </form>
+
+{% if messages %}
+    <script>
+        {% for message in messages %}
+        alert("{{ message }}");
+        {% endfor %}
+    </script>
+{% endif %}
+
 </div>
 {% endblock %}
