@@ -350,14 +350,6 @@ font-size: 20px;
 
 }
 
-.contact-form {
-    text-align:center;
-}
-
-.form-group{
-    text-align:center;
-    margin-bottom:10px;
-}
 /* Contact page */
 
 
@@ -375,12 +367,13 @@ font-size: 20px;
     max-width: 600px;
 }
 
-.contact-form button {
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    background-color:silver;
-    color:black;
-    border:none;
+.contact-form {
+    text-align:center;
+}
+
+.form-group{
+    text-align:center;
+    margin-bottom:10px;
 }
 
 .contact-form input,
@@ -392,6 +385,14 @@ font-size: 20px;
     background-color: #222;
     color: #fff;
     font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color:silver;
+    color:black;
+    border:none;
 }
 
 .contact-form button:hover{
