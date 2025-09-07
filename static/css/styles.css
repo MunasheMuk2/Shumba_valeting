@@ -368,10 +368,11 @@ font-size: 20px;
 .contact-container{
     background-color:black;
     color:white;
-    width:40%;
     border-radius: 10px;
     padding:20px 20px 20px 20px;
     font-size:15px; 
+    margin: 40px auto;
+    max-width: 600px;
 }
 
 .contact-form button {
