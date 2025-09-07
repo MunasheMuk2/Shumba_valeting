@@ -14,6 +14,9 @@ class BookingForm(forms.ModelForm):
             "date",
             "time_slot",
         ]
+        labels = {
+            "car_make_model": "Car Make & Model",
+        }
         # Date widget from - https://www.geeksforgeeks.org/python/django-form-field-custom-widgets/
         # time field - https://studygyaan.com/django/date-picker-in-django#google_vignette
         widgets = {
