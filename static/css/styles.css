@@ -519,6 +519,12 @@ font-size: 20px;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 } */
 
+ /* Sign up */
+
+.sign-up{
+    margin-bottom:8rem;
+}
+
 
 @media only screen and (max-width: 1036px) {
 
