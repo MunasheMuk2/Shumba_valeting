@@ -39,5 +39,15 @@
     {% endblock body %}
     {% block extra_body %}
     {% endblock extra_body %}
+
+    {# Popup alerts only #}
+    {% if messages %}
+    <script>
+      {% for message in messages %}
+        alert("{{ message|escapejs }}");
+      {% endfor %}
+    </script>
+    {% endif %}
+
   </body>
 </html>

@@ -23,6 +23,7 @@ def home(request):
                     request,
                     "Sorry, this time slot is already booked. Please select another time.",
                 )
+                return render(request, "home.html", {"form": form})
     else:
         form = BookingForm()
 
