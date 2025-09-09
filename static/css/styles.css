@@ -526,7 +526,7 @@ font-size: 20px;
 }
 
 .sign-button {
-    color: black !important;
+    color: red !important;
     background-color: silver !important;
     padding: 8px 16px !important;
     font-size: 14px !important;
@@ -535,8 +535,8 @@ font-size: 20px;
     border:none !important;
 }
 
-form.login p.helptext {
-    display: none !important; /* hides forgot your password text*/
+.log-in{
+    margin-bottom:15rem;
 }
 
 @media only screen and (max-width: 1036px) {

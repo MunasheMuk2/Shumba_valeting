@@ -56,6 +56,12 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
 
+# ACCOUNT_FORMS = {
+#     "login": "yourapp.forms.CustomLoginForm",
+# }
+
+# ACCOUNT_EMAIL_VERIFICATION = "none"
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
