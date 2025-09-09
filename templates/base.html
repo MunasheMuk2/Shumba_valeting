@@ -54,10 +54,10 @@
         <!-- Right-aligned links -->
         <ul class="navbar-nav ms-auto">
           {% if user.is_authenticated %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}"><i class="fa-solid fa-arrow-right-from-bracket"></i><span id="log">Logout</span></a></li>
+            <li class="nav-item"><a class="right-link nav-link" href="{% url 'account_logout' %}"><i class="fa-solid fa-arrow-right-from-bracket"></i><span id="log">Logout</span></a></li>
           {% else %}
-          <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a></li>
-            <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}"><i class="fa-regular fa-circle-user"></i><span id="log">Login</span></a></li>
+          <li class="nav-item"><a class="right-link nav-link" href="{% url 'account_signup' %}">Sign Up</a></li>
+            <li class="nav-item"><a class="right-link nav-link" href="{% url 'account_login' %}"><i class="fa-regular fa-circle-user"></i><span id="log">Login</span></a></li>
           {% endif %}
         </ul>
       </div>
