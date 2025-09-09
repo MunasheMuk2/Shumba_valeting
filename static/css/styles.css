@@ -523,6 +523,13 @@ font-size: 20px;
 
 .sign-up{
     margin-bottom:8rem;
+    background-color:black;
+    color:white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    font-size:15px; 
+    margin: 40px auto;
+    max-width: 600px;
 }
 
 .sign-button {
