@@ -626,4 +626,16 @@ font-size: 20px;
         width:155px;
     }
 
+
+
 } 
+
+@media only screen and (max-width: 575.98px) {
+
+    .footer { 
+        font-size:10.5px;
+        text-wrap:wrap;
+    
+    }
+
+}
