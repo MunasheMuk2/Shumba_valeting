@@ -56,6 +56,14 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
 
 
+### Site Owner/Admin
+| User Story | Test Action | Expected Result | Status |
+|---|---|---|---|
+| Add/edit/delete services | Django Admin: Services | Create, update, delete Service; reflected on `/services` | ✅ |
+| Manage bookings | Django Admin: Bookings | View, edit, delete; uniqueness enforced | ✅ |
+| Consistent branding | Visual inspection across pages | Black/silver theme, typography (Playfair Display), imagery | ✅ |
+
+---
 
 
 
