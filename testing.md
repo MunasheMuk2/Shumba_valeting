@@ -65,6 +65,17 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
 ---
 
+##  Functional Testing (Manual)
+
+### 2.1 Booking Form
+| Case | Steps | Expected | Result |
+|---|---|---|---|
+| Valid booking | Fill required fields (date, time slot, package, name/email if applicable) → Submit | Success message; record saved | ✅ |
+| Missing required field | Leave `date` blank → Submit | Field error under `date` | ✅ |
+| Invalid email | Enter `test@` → Submit | Email validation error | ✅ |
+| Duplicate slot | Create booking for same `date + slot` | Error message: slot already booked | ✅ |
+| Unauthenticated user | Not logged in → book | Booking saved (guest) or prompt for minimal info; no crash | ✅ |
+| Server error handling | Force IntegrityError (duplicate) | Graceful error; explanatory message; no stack trace to user | ✅ |
 
 
 
