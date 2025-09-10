@@ -48,7 +48,65 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - Each valet package has a dedicated image for visual clarity.  
 
 
+# Project Features
 
+---
+
+## 🧭 Navigation Bar
+
+- Placed at the top of every page, with links to **Home**, **Services**, **Contact**, and **Booking**.  
+- Fully responsive across desktop and mobile.  
+- On mobile, the navigation bar collapses into a **burger menu** for easier navigation.  
+
+![Navigation Bar](screenshots/navbar.jpg)
+
+---
+
+## 🏠 Home Page
+
+**Features:**
+
+- Brand introduction with clear messaging.  
+-  Call-to-action buttons directing users to the **Booking** page.  
+
+![Home Page](screenshots/homepage.jpg)
+
+---
+
+## 🛠️ Services Page
+
+**Features:**
+
+- Displays valet packages: **Basic, Premium, Executive, Luxury**.  
+- Each package includes descriptions, pricing, and images.  
+
+![Services Page](screenshots/servicespage.jpg)
+
+---
+
+## ✉️ Contact Page
+
+**Features:**
+
+- Contact form with fields for user details.  
+- Built-in **validation** and error handling.  
+- Submit button to send user inquiries.  
+
+![Contact Page](screenshots/contactpage.jpg)
+
+---
+
+## 📅 Booking Page
+
+**Features:**
+
+- Booking form connected to the database.  
+- Prevents **duplicate time slots** from being booked.  
+- Provides **success/error feedback** upon submission.  
+
+![Booking Page](screenshots/bookingpage.jpg)
+
+---
 
 
 
