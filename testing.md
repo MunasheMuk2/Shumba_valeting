@@ -78,6 +78,12 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | Server error handling | Force IntegrityError (duplicate) | Graceful error; explanatory message; no stack trace to user | ✅ |
 
 
+### 2.2 Contact Form
+| Case | Steps | Expected | Result |
+|---|---|---|---|
+| Valid submission | Fill name/email/message → Submit | Success message; record saved | ✅ |
+| Missing name | Submit empty `name` | Field error shown | ✅ |
+| Invalid email | `abc@` | Email validation error | ✅ |
 
 
 
