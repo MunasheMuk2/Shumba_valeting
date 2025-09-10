@@ -93,6 +93,15 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | Image responsiveness | Resize to 320px width | Images scale (`width:100%`, `height:auto`) | ✅ |
 
 
+## 3 CRUD Coverage
+
+CRUD operations verified through **UI** and **Django Admin**.
+
+| Entity | Create | Read | Update | Delete | UI Reflection |
+|---|---|---|---|---|---|
+| Service | Admin adds service | Services page lists correctly | Admin edits service | Admin deletes service | Changes visible immediately on `/services` |
+| Booking | User submits form | Admin can view; user sees message | Admin edits record/slot | Admin deletes record | Changes reflected: duplicates blocked, messages updated |
+| Contact | User submits form | Admin can read | (N/A for user) | Admin deletes | (Back-office only) |
 
 
 
