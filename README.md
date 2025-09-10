@@ -33,6 +33,10 @@ Shumba Valeting is a **full-stack site** where customers can view packages, make
 Designed the site so the purpose of the site is **clear to first-time visitors**: it is a **car valeting booking and information platform**, targeting **high-end car owners** who want convenience, professionalism, and a luxury service.  
 
 
+### Colour Scheme
+- **Black** – luxury, premium feel  
+- **Silver/Grey** – professional, modern tone  
+- **White** – clean readability  
 
 
 
