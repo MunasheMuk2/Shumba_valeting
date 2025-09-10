@@ -86,6 +86,12 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | Invalid email | `abc@` | Email validation error | ✅ |
 
 
+### 2.3 Services Page
+| Case | Steps | Expected | Result |
+|---|---|---|---|
+| Card content | Load `/services` | Image, title, price, bullet list (styled checkmarks optional) | ✅ |
+| Image responsiveness | Resize to 320px width | Images scale (`width:100%`, `height:auto`) | ✅ |
+
 
 
 
