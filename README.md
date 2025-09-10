@@ -43,6 +43,9 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - **Sans-serif fallback** (body text for readability)  
 
 
+### Imagery
+- High-quality imagery of valeting services is used across the Services page.  
+- Each valet package has a dedicated image for visual clarity.  
 
 
 
