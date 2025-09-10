@@ -118,6 +118,10 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - **Responsive Design**: Works seamlessly across desktops, tablets, and mobiles.  
 
 
+### Future features to Implement
+- Online payments 
+- SMS/email booking notifications.  
+- Testimonials page.  
 
 
 
