@@ -124,6 +124,37 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - Testimonials page.  
 
 
+## Database Schema
+
+The system uses Django ORM with models mapped to **SQLite (development)** / **PostgreSQL (production)**.
+
+### Models
+
+**Contact**
+- `name` (CharField)  
+- `email` (EmailField)  
+- `message` (TextField)  
+
+**Booking**
+- `user` (ForeignKey to Django User, optional for guests)  
+- `date` (DateField)  
+- `time_slot` (CharField / TimeField)  
+- `package` (ForeignKey to Service)  
+- **Unique constraint** on date + time_slot  
+
+**Service**
+- `title` (CharField)  
+- `description` (TextField)  
+- `price` (DecimalField)  
+- `image` (ImageField)  
+
+### Schema Characteristics
+- Fully normalised, relational database.  
+- One-to-many: `User → Bookings`, `Service → Bookings`.  
+- Centralised config in `settings.py`.  
+- Schema matches business needs (car valeting domain).  
+
+---
 
 
 
