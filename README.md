@@ -156,6 +156,58 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 
 ---
 
+## Testing
+
+### Manual Testing
+- Forms tested with valid/invalid inputs. Validation errors display correctly.  
+- Duplicate booking attempts rejected gracefully with error message.  
+
+### CRUD Testing
+- Added, updated, and deleted services and bookings via Django Admin.  
+- Verified CRUD operations reflected immediately in UI.  
+
+### Responsive Testing
+- Tested on desktop, tablet, and mobile (Chrome DevTools).  
+- Grid layout adapts correctly.  
+
+### Browser Testing
+- Works in Chrome, Firefox, Safari, Edge.  
+
+### Accessibility
+- Checked colour contrast with Lighthouse.  
+- Semantic HTML (headings, lists, alt text).  
+
+---
+
+## 🛠️ Development Process
+
+- **Version control**: Git & GitHub.  
+- **Commit messages**: Small, descriptive, documenting progress.  
+- **Process followed**:  
+  1. Planning (wireframes, schema design, UX goals).  
+  2. Setup (Django project, models, apps, templates).  
+  3. Implementation (CRUD, forms, feedback).  
+  4. Styling (CSS branding, responsive grid).  
+  5. Testing (manual and validation).  
+  6. Deployment (local + Heroku).  
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Target audience:
