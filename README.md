@@ -208,7 +208,27 @@ python manage.py runserver
 ---
 
 
+## 🚀 Remote Deployment (Heroku)
 
+- Deployed with **Heroku**, using **PostgreSQL** as the database.  
+- `Procfile` and `requirements.txt` included for deployment.  
+- Environment variables managed in **Heroku Config Vars**.  
+- `DEBUG = False` in production for security.  
+
+---
+
+## 🔒 Security
+
+- Used **SECRET_KEY** 
+- `.gitignore` excludes sensitive files.  
+- `DEBUG` disabled in production.  
+
+---
+
+## 🙌 Credits
+
+- **Media**: Images sourced from [Unsplash](https://unsplash.com) & chatGPT. 
+- **Code References**: code institute and youtube tutorials
 
 
 
