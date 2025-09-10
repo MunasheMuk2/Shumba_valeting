@@ -108,7 +108,14 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
+- **CRUD Operations**:  
 
+  - **Create**: Bookings and messages.  
+  - **Read**: Services, bookings, and contact messages.  
+  - **Update**: Admin updates booking records and services.  
+  - **Delete**: Admin removes bookings or services.  
+- **User Feedback**: Django messages framework provides alerts (e.g., “Booking confirmed”, “Time slot already taken”).  
+- **Responsive Design**: Works seamlessly across desktops, tablets, and mobiles.  
 
 
 
