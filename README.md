@@ -38,6 +38,9 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - **Silver/Grey** – professional, modern tone  
 - **White** – clean readability  
 
+### Typography
+- **Playfair Display** (headings, luxury branding)  
+- **Sans-serif fallback** (body text for readability)  
 
 
 
