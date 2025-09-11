@@ -208,6 +208,11 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 
 ---
 
+### Unsolved bugs
+
+1. On the vehicle guide page the main header is appearing lower than it should without any CSS at the start of the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
+---
+
 ## Deployment
 
 ### Local Deployment
