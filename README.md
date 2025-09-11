@@ -167,6 +167,8 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 - Centralised config in `settings.py`.  
 - Schema matches business needs (car valeting domain).  
 
+- [ERD link](https://lucid.app/lucidchart/08e51bdd-1b5c-4003-9cd2-d0b613ff6a58/edit?invitationId=inv_e6ff664a-7abb-422f-a7f4-e7e467aeff82)
+
 ---
 
 ## Testing
