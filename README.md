@@ -208,6 +208,16 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 
 ---
 
+### Solved bugs
+
+1. Had an issue with the select options for the pallet types showing as strings despite the select type being a number. Rectified this by adding .value to the variable in JavaScript and listing the pallet size dimensions 
+
+2. The site buttons were not working on the page when trying to add an event listener for clicks in a form. Resolved this by taking out the form tags and putting the form data in a div container instead.
+
+3. The two buttons on the home page were not staying in one position when screen size changed so placed them in a div and used flex box 
+
+---
+
 ### Unsolved bugs
 
 1. On the vehicle guide page the main header is appearing lower than it should without any CSS at the start of the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
