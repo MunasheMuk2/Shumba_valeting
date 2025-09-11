@@ -111,10 +111,6 @@ main, .main-section, .content {
     text-align:center;
 }
 
-/* .main-text{
-    text-wrap: nowrap;
-    text-align: center;
-} */
 
 .main-button {
         color:white;
@@ -141,8 +137,6 @@ main, .main-section, .content {
 .gallery{
     width:700px;
     height: auto;  /*fixes margins on page so content does not overlap*/
-    /* margin-top:5rem;
-    margin-left: 18rem; */
     margin-left: auto;
     margin-right: auto;
     margin-top:3rem !important;
@@ -214,8 +208,6 @@ main, .main-section, .content {
     border: none;
     font-size: 15px;
     border-radius: 3px;
-    /* margin: 0 auto; */
-    /* display: block; */
     margin-top:15rem;
     width:175px;
     text-align:center;
@@ -226,7 +218,6 @@ main, .main-section, .content {
 /* Booking form */
 
 .schedule {
-    /* margin-top:1rem; */
     display:flex;
     flex-direction:row;
 
@@ -391,7 +382,6 @@ font-size: 20px;
     font-size: 15px;
     border-radius: 3px;
     margin: 0 auto;
-    /* display: block; */
     width:155px;
     text-align:center;
     text-decoration:none;
