@@ -105,7 +105,49 @@ CRUD operations verified through **UI** and **Django Admin**.
 
 
 
+## Validator testing
++ ### HTML
 
+  #### Landing Page
+   
+    ![Landing Page HTML Validator](screenshots/htmlvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+      #### Vehicle guide Page
+   
+    ![Vehicle guide Page HTML Validator](screenshots/vehicleguidevalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+     #### Contact us Page
+   
+    ![Contact us Page HTML Validator](screenshots/contactusvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+ #### Contact sucess Page
+   
+   ![Contact sucess Page HTML Validator](screenshots/successvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+
+
+    
++ ### CSS
+  No errors or warnings were found when passing through the official W3C (Jigsaw) validator 
+    ![CSS](screenshots/cssvalidator.jpg)
+
+ ---
+
++ ### JSHint
+
+ No errors or warnings were found when passing through the JS code in JSHint. Only  warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6. 
+
+   ![JSHint](screenshots/jshint.jpg)
+
+---
 
 
 
