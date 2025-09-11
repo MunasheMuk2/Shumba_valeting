@@ -4,9 +4,6 @@ Shumba valeting is a **Full Stack Django website** designed for **car valeting s
 The site allows customers to explore valet packages, make bookings, and contact the business.  
 The site has a complete CRUD implementation, responsive design, and database modelling, with an emphasis on a **professional, luxury user experience**.
 
-The site can be accessed by this [link](https://munashemuk2.github.io/StackSmartGuide/)
-
-
 ## User Experience (UX)
 
 ### User Stories

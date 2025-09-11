@@ -7,6 +7,10 @@ from django.contrib.auth.decorators import login_required
 
 
 def home(request):
+    messages.info(request, "🚀 Test message: messages framework is working")
+
+
+def home(request):
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
