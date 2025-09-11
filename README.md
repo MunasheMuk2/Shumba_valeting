@@ -33,7 +33,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 #### Mobile/Tablets/Desktop devices
 
-- [Wireframe link](https://www.canva.com/design/DAGsg5tEPug/F1DLTwL4BDx1LUsQqJEtiQ/edit)
+- [Wireframe link](https://www.canva.com/design/DAGvX6KVp-M/JDVmeQI2DLzMSHCkSxI5jA/view?utm_content=DAGvX6KVp-M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc1f717e4d3)
 
 ### Wireframe Reasoning 
 
