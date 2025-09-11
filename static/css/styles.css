@@ -442,65 +442,6 @@ font-size: 20px;
     color: #000;
 }
 
-/* Contact Page Styling - Shumba Valeting */
-
-/* .contact-container {
-    background-color: black; 
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 40px auto;
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-}
-
-.contact-container h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: silver;
-}
-
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: white;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #555;
-    border-radius: 8px;
-    background-color: #222;
-    color: #fff;
-    font-size: 1rem;
-}
-
-
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #c0c0c0;
-    color: #111;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.contact-form button:hover {
-    background-color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
-} */
-
  /* Sign up */
 
 .sign-up{
@@ -607,7 +548,6 @@ font-size: 20px;
         font-size: 15px;
         width:155px;
     }
-
 
 } 
 
