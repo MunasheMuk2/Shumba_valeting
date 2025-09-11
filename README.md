@@ -37,13 +37,13 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ### Wireframe Reasoning 
 
-1. The wireframe prioritizes clarity and usability, ensuring users can quickly understand the purpose of the Smart Pallet Calculator.
+1. The wireframe prioritizes clarity and usability, ensuring users can quickly understand the purpose of Shumba Valeting.
 
-2. Input fields on the pallet calculator form/contant us page are logically grouped to guide the user through step-by-step data entry
+2. Input fields on the booking form are logically grouped to guide the user through step-by-step data entry
 
-3. The calculate and reset button on home page and submit button on contact us page are positioned to reinforce final action after data is entered
+3. The  buttons on home page are positioned to work as call to actions 
 
-4. Images added on the vehicle guide page work as an aid to indicate vehicle sizes in each section 
+4. Images added to show users examples of thw work Shumba valeting does
 
 
 ### Colour Scheme
