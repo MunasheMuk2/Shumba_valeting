@@ -29,6 +29,22 @@ Shumba Valeting is a **full-stack site** where customers can view packages, make
 
 Designed the site so the purpose of the site is **clear to first-time visitors**: it is a **car valeting booking and information platform**, targeting **high-end car owners** who want convenience, professionalism, and a luxury service.  
 
+### Wireframes 
+
+#### Mobile/Tablets/Desktop devices
+
+- [Wireframe link](https://www.canva.com/design/DAGsg5tEPug/F1DLTwL4BDx1LUsQqJEtiQ/edit)
+
+### Wireframe Reasoning 
+
+1. The wireframe prioritizes clarity and usability, ensuring users can quickly understand the purpose of the Smart Pallet Calculator.
+
+2. Input fields on the pallet calculator form/contant us page are logically grouped to guide the user through step-by-step data entry
+
+3. The calculate and reset button on home page and submit button on contact us page are positioned to reinforce final action after data is entered
+
+4. Images added on the vehicle guide page work as an aid to indicate vehicle sizes in each section 
+
 
 ### Colour Scheme
 - **Black** – luxury, premium feel  
