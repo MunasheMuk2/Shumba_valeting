@@ -25,8 +25,6 @@ def home(request):
                 )
                 return render(request, "home.html", {"form": form})
     else:
-            messages.error(request, "Please correct the errors below.")
-    else:
         form = BookingForm()
 
     return render(request, "home.html", {"form": form})
