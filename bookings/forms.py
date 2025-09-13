@@ -1,8 +1,19 @@
 from django import forms
-from .models import Booking
+from .models import Booking, Package, TIME_SLOTS
 
 
 class BookingForm(forms.ModelForm):
+    package = forms.ModelChoiceField(
+        queryset=Package.objects.all(),
+        empty_label="Select a Package",
+        label="Valet Package",
+    )
+
+    time_slot = forms.ChoiceField(
+        choices=TIME_SLOTS,
+        label="Preferred Time Slot",
+    )
+
     class Meta:
         model = Booking
         fields = [
@@ -15,10 +26,9 @@ class BookingForm(forms.ModelForm):
             "time_slot",
         ]
         labels = {
-            "car_make_model": "Car Make & Model e.g. Toyota Hilux",
+            "car_make_model": "Car Make & Model (e.g. Toyota Hilux)",
+            "car_reg": "Car Registration (optional)",
         }
-        # Date widget from - https://www.geeksforgeeks.org/python/django-form-field-custom-widgets/
-        # time field - https://studygyaan.com/django/date-picker-in-django#google_vignette
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
         }
