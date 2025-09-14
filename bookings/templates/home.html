@@ -203,10 +203,12 @@ Valeting{% endblock %}
     </a>
   </div>
 
-  {% if error_message %}
-<script>
-    alert("{{ error_message|escapejs }}");
-</script>
+  {% if messages %}
+  {% for message in messages %}
+    <script>
+      alert("{{ message|escapejs }}");
+    </script>
+  {% endfor %}
 {% endif %}
 
   <form method="post" class="booking-form">
