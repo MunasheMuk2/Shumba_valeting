@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def home(request):
-        error_message = None 
+    error_message = None
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
