@@ -65,7 +65,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-## 🧭 Navigation Bar
+##  Navigation Bar
 
 - Placed at the top of every page, with links to **Home**, **Services**, **Contact**, and **Booking**.  
 - Fully responsive across desktop and mobile.  
@@ -75,7 +75,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-## 🏠 Home Page
+##  Home Page
 
 **Features:**
 
@@ -86,7 +86,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-## 🛠️ Services Page
+##  Services Page
 
 **Features:**
 
@@ -97,7 +97,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-## ✉️ Contact Page
+##  Contact Page
 
 **Features:**
 
@@ -109,7 +109,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-## 📅 Booking Page
+##  Booking Page
 
 **Features:**
 
@@ -189,7 +189,7 @@ The system uses Django ORM with models mapped to **PostgreSQL (production)**.
 
 ---
 
-## 🛠️ Development Process
+## Development Process
 
 - **Version control**: Git & GitHub.  
 - **Commit messages**: Small, descriptive, documenting progress.  
@@ -248,7 +248,7 @@ Deployment delays (waiting for GitHub Student Pack credits)
 
 ---
 
-## 🔒 Security
+## Security
 
 - Used **SECRET_KEY** 
 - `.gitignore` excludes sensitive files.  
@@ -256,7 +256,7 @@ Deployment delays (waiting for GitHub Student Pack credits)
 
 ---
 
-## 🙌 Credits
+##  Credits
 
 - **Media**: Images sourced from [Unsplash](https://unsplash.com) & chatGPT. 
 - **Code References**: code institute and youtube tutorials
