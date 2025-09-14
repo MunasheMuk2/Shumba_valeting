@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import BookingForm
 from .models import Booking
-from django.db import IntegrityError
+from django.core.exceptions import ValidationError
 from django.contrib.auth.decorators import login_required
 
 
