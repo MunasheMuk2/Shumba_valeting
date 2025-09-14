@@ -18,12 +18,9 @@ def home(request):
                 booking.save()  # Now save to DB
                 messages.success(request, "Booking confirmed! Thank you.")
                 return redirect("home")  # Prevent resubmission
-            except IntegrityError:
-                messages.error(
-                    request,
-                    "Sorry, this time slot is already booked. Please select another time.",
-                )
-                return render(request, "home.html", {"form": form})
+            except ValidationError as e:
+                # Add errors to the form's non_field_errors
+                form.add_error(None, e.message)
     else:
         form = BookingForm()
 

@@ -35,6 +35,16 @@ class Booking(models.Model):
         unique_together = ("date", "time_slot")
         ordering = ["date", "time_slot"]
 
+    def clean(self):
+        if (
+            Booking.objects.filter(date=self.date, time_slot=self.time_slot)
+            .exclude(pk=self.pk)
+            .exists()
+        ):
+            raise ValidationError(
+                "Sorry, this time slot is already booked. Please select another one."
+            )
+
     def __str__(self):
         return (
             f"{self.name} - {self.package.name} (£{self.package.price}) "
