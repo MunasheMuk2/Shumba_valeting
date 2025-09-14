@@ -203,12 +203,12 @@ Valeting{% endblock %}
     </a>
   </div>
 
-  {% if messages %}
-  <script>
-    // If there's a message (success or error), scroll to the form
-    document.getElementById("bottom")?.scrollIntoView({ behavior: "smooth" });
-  </script>
-{% endif %}
+  <form method="post"
+      {% if form.errors %}
+        action="#bottom"
+      {% endif %}
+      id="booking-form"
+      class="booking-form">
 
   <form method="post"action="#bottom" class="booking-form">
     <h2>Online Booking Form</h2>
