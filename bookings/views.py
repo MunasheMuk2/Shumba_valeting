@@ -19,8 +19,8 @@ def home(request):
                 booking.save()  # Now save to DB
                 messages.success(request, "Booking confirmed! Thank you.")
                 return redirect("home")  # Prevent resubmission
-            except ValidationError as e:
-                messages.error(request, e.message)  # Flash message to the user
+                except ValidationError as e:
+                messages.error(request, e.message)
     else:
         form = BookingForm()
 
