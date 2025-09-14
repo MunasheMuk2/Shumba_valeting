@@ -11,10 +11,11 @@ class Package(models.Model):
 
 
 TIME_SLOTS = [
-    ("09-11", "9am - 11am"),
-    ("11-13", "11am - 1pm"),
-    ("13-15", "1pm - 3pm"),
-    ("15-17", "3pm - 5pm"),
+    ("08:00", "08:00 AM"),
+    ("10:00", "10:00 AM"),
+    ("12:00", "12:00 PM"),
+    ("14:00", "02:00 PM"),
+    ("16:00", "04:00 PM"),
 ]
 
 
@@ -28,7 +29,7 @@ class Booking(models.Model):
     )
     package = models.ForeignKey(Package, on_delete=models.CASCADE)
     date = models.DateField()
-    time_slot = models.CharField(max_length=10, choices=TIME_SLOTS)
+    time_slot = models.CharField(max_length=50, choices=TIME_SLOTS)
     created_at = models.DateTimeField(auto_now_add=True)
     cancelled = models.BooleanField(default=False)
 
