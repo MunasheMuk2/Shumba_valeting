@@ -24,9 +24,7 @@ class Booking(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     car_make_model = models.CharField(max_length=150)
-    car_reg = models.CharField(
-        max_length=20, null=True, blank=True, help_text="e.g., ABC-1234"
-    )
+    car_reg = models.CharField(max_length=20, null=True, blank=True)
     package = models.ForeignKey(Package, on_delete=models.CASCADE)
     date = models.DateField()
     time_slot = models.CharField(max_length=50, choices=TIME_SLOTS)
