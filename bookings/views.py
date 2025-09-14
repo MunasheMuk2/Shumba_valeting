@@ -20,9 +20,7 @@ def home(request):
                 messages.success(request, "Booking confirmed! Thank you.")
                 return redirect("home")  # Prevent resubmission
             except ValidationError as e:
-                # Show validation error as JavaScript alert
-                error_message = e.message
-                form.add_error(None, e.message)
+                messages.error(request, e.message)  # Flash message to the user
     else:
         form = BookingForm()
 
