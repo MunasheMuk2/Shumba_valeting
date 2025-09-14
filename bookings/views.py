@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def home(request):
+        error_message = None 
     if request.method == "POST":
         form = BookingForm(request.POST)
         if form.is_valid():
@@ -19,7 +20,8 @@ def home(request):
                 messages.success(request, "Booking confirmed! Thank you.")
                 return redirect("home")  # Prevent resubmission
             except ValidationError as e:
-                # Add errors to the form's non_field_errors
+                # Show validation error as JavaScript alert
+                error_message = e.message
                 form.add_error(None, e.message)
     else:
         form = BookingForm()
