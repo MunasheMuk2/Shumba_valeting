@@ -204,11 +204,10 @@ Valeting{% endblock %}
   </div>
 
   {% if messages %}
-  {% for message in messages %}
-    <script>
-      alert("{{ message|escapejs }}");
-    </script>
-  {% endfor %}
+  <script>
+    // If there's a message (success or error), scroll to the form
+    document.getElementById("bottom")?.scrollIntoView({ behavior: "smooth" });
+  </script>
 {% endif %}
 
   <form method="post" class="booking-form">
