@@ -317,11 +317,11 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 ### Site Users
 | User Story | Test Action | Expected Result | Status |
 |---|---|---|---|
-| View valet packages | Visit `/services` | See Basic, Premium, Executive, Luxury cards with price, image, description | ✅ |
-| Make online booking | Visit `/` → booking form → submit valid data | Booking saved, success message shown, redirected to Home | ✅ |
-| Receive feedback | Submit valid/invalid booking/contact | Success message or field errors; no crash | ✅ |
-| Smooth navigation | Use navbar on mobile/desktop | Links to Home/Services/Contact work; active section visible | ✅ |
-| Input validation | Submit blank/invalid email; duplicate slot | Form errors shown; duplicate slot rejected with clear message | ✅ |
+| View valet packages | Visit `/services` | See Basic, Premium, Executive, Luxury cards with price, image, description | Yes |
+| Make online booking | Visit `/` → booking form → submit valid data | Booking saved, success message shown, redirected to Home | Yes |
+| Receive feedback | Submit valid/invalid booking/contact | Success message or field errors; no crash | Yes |
+| Smooth navigation | Use navbar on mobile/desktop | Links to Home/Services/Contact work; active section visible | Yes |
+| Input validation | Submit blank/invalid email; duplicate slot | Form errors shown; duplicate slot rejected with clear message | Yes|
 
 
 
