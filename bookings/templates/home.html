@@ -1,7 +1,15 @@
-{% extends "base.html" %} {% load static %} {% block title %}Home - Shumba
-Valeting{% endblock %} 
+{# Extend the base layout template #}
+{% extends "base.html" %} 
 
+{% load static %} 
+
+{# Set the page title #}
+{% block title %}Home - Shumba Valeting{% endblock %} 
+
+{# Main content section starts here #}
 {% block content %}
+
+{# Intro Section #}
 <section class="main-section">
   <p class="main-text">
     Skip the car wash queues — no more tedious trips to your local car wash.
@@ -9,6 +17,7 @@ Valeting{% endblock %}
     will arrive at your home or office to give your car a flawless, showroom
     finish.
   </p>
+
   <button
     class="main-button"
     onclick="document.getElementById('bottom').scrollIntoView({ behavior: 'smooth' });"
@@ -17,6 +26,7 @@ Valeting{% endblock %}
   </button>
 </section>
 
+{# Image Carousel Gallery Section - Bootstrap #}
 <section class="gallery">
   <!-- <h2 class="gallery-header">Gallery</h2> -->
   <div id="carouselExampleIndicators" class="carousel slide">
@@ -86,6 +96,7 @@ Valeting{% endblock %}
   </div>
 </section>
 
+{# Service benefits section - boostrap #}
 <section class="benefits py-5 text-center">
   <div class="container">
     <h2 class="mb-4">Why Book Our Mobile Valeting Service?</h2>
@@ -101,6 +112,7 @@ Valeting{% endblock %}
   </div>
 </section>
 
+{# Services offered with images section - boostrap #}
 <section class="main-services">
   <h2>Our services</h2>
   <div class="container my-4 text-center">
@@ -110,7 +122,7 @@ Valeting{% endblock %}
         <img
           src="{% static 'images/car image.png' %}"
           class="img-fluid rounded mb-2"
-          alt="Service 1"
+          alt="icon of a car"
         />
       </figure>
       <figure class="col-md-4">
@@ -118,7 +130,7 @@ Valeting{% endblock %}
         <img
           src="{% static 'images/seat.png' %}"
           class="img-fluid rounded mb-2"
-          alt="Service 2"
+          alt="icon of a seat"
         />
       </figure>
       <figure class="col-md-4">
@@ -126,7 +138,7 @@ Valeting{% endblock %}
         <img
           src="{% static 'images/engine.png' %}"
           class="img-fluid rounded mb-2"
-          alt="Service 3"
+          alt="icon of an engine"
         />
       </figure>
     </div>
@@ -215,7 +227,7 @@ Valeting{% endblock %}
       Submit Booking
     </button>
   </form>
-  
+
   {% if form.errors %}
   <script>
     // Scroll to the form on error

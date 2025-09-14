@@ -1,18 +1,19 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block title %}My Bookings - Shumba Valeting{% endblock %}
 
 {% block nav_image %}
 <!-- No image by default -->
 {% endblock %}
 
-
+{# Main content section of the page #}
 {% block content %}
+<!-- Page Heading -->
 <h2>My Bookings</h2>
 
 {% if bookings %}
+<!-- Bookings Table -->
 <table class="table table-dark table-striped">
   <thead>
     <tr>
