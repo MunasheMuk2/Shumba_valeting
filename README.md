@@ -292,6 +292,7 @@ Deployment delays (waiting for GitHub Student Pack credits)
 * Step 4: Create a Superuser on Heroku
 * Step 5: Sync Data (Packages & Time Slots)
 
+* Due to late deployment onto Heroku - deployments split between git hub and Heroku 
 ---
 
 ## Security
