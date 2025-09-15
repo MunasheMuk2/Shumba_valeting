@@ -7,7 +7,7 @@
 <!-- No image by default -->
 {% endblock %}
 
-
+{# Main content of the services page starts here #}
 {%block content%}
 <section class="services-section">
     <h1 class="services-heading">Our Valet Packages</h1>
@@ -31,7 +31,7 @@
             </p>
         </div>
 
-        <!-- Premium Valet -->
+        {# -Premium Valet - #}
         <div class="service-card">
             <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
             <h2>Premium Valet</h2>
@@ -48,7 +48,7 @@
             </p>
         </div>
 
-        <!-- Executive Valet -->
+        {# - Executive Valet - #}
         <div class="service-card">
             <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
             <h2>Executive Valet</h2>
@@ -65,7 +65,7 @@
             </p>
         </div>
 
-        <!-- Luxury Valet -->
+        {# - Luxury Valet - #}
         <div class="service-card">
             <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
             <h2>Luxury Valet</h2>
@@ -82,7 +82,8 @@
                 </ul>
             </p>
         </div>
-
+    
+    {# Booking Button at the Bottom #}
     <button class="services-button"> 
         <a href="{% url 'home' %}#bottom" class="btn">Book Now</a>
     </button>
