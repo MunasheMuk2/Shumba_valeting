@@ -112,7 +112,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-##  Booking Page
+##  Booking form
 
 **Features:**
 
@@ -120,7 +120,42 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - Prevents **duplicate time slots** from being booked.  
 - Provides **success/error feedback** upon submission.  
 
-![Booking Page](screenshots/bookingpage.jpg)
+![Booking form](screenshots/bookingform.jpg)
+
+---
+
+
+##  Sign Up Page
+
+**Features:**
+
+- User registration with **email, username, and password**.  
+- Redirects users after successful registration.  
+
+![Sign Up Page](screenshots/signuppage.jpg)
+
+---
+##  Login Page
+
+**Features:**
+
+- Allows users to **sign in** securely.  
+- Provides a link to **sign up** if the user does not have an account.  
+- CSRF protection for secure login requests.  
+
+![Login Page](screenshots/loginpage.jpg)
+
+---
+
+## Logout Page
+
+**Features:**
+
+- Confirms before logging a user out.  
+- CSRF protection for security.  
+- Simple one-click **sign out** functionality.  
+
+![Logout Page](screenshots/logoutpage.jpg)
 
 ---
 
