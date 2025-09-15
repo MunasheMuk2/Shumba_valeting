@@ -292,7 +292,7 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
     - Extra small devices:
 
-    ![XS devices](docs/small-devices.jpg)
+    ![XS devices](screenshots/small-devices.jpg)
 
     ---
 
