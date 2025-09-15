@@ -3,6 +3,7 @@
 Shumba valeting is a **Full Stack Django website** designed for **car valeting services**.  
 The site allows customers to explore valet packages, make bookings, and contact the business.  
 The site has a complete CRUD implementation, responsive design, and database modelling. 
+The Django admin backend enables the site owner to manage contact messages, customer contact details, and valet bookings and packages, providing full administrative control over the site’s data.
 
 - [Site link](https://shumba-app-20d8670cc25d.herokuapp.com/)
 
@@ -174,10 +175,10 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 - **CRUD Operations**:  
 
-  - **Create**: Bookings and messages.  
+  - **Create**: Bookings (including packages) and messages.  
   - **Read**: Services, bookings, and contact messages.  
-  - **Update**: Admin updates booking records and contact messages.  
-  - **Delete**: Admin removes bookings or contact messages.  
+  - **Update**: Admin updates bookings/packages or contact details or messages. 
+  - **Delete**: Admin removes bookings/packages or contact details or messages.  
 ![Admin Page](screenshots/admin.jpg)
 
 - **User Feedback**: Messages framework provides alerts (e.g., “Booking confirmed”, “Time slot already taken”).  
