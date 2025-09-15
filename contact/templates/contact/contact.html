@@ -2,15 +2,18 @@
 
 {% block title %}Contact Us - Shumba Valeting{% endblock %}
 
+{# Navigation image block #}
 {% block nav_image %}
 <!-- No image by default -->
 {% endblock %}
 
+{# Main content block starts here #}
 {% block content %}
 <div class="contact-container">
     <h1>Contact Us</h1>
     <p> Your car deserves the best – we’d love to hear from you.</p>
 
+{# Contact Form Section #}
     <form method="post" class="contact-form">
         {% csrf_token %}
         <div class="form-group">
@@ -27,7 +30,8 @@
         </div>
         <button type="submit">Send Message</button>
     </form>
-
+    
+{# Display messages as alerts if present #}
 {% if messages %}
     <script>
         {% for message in messages %}

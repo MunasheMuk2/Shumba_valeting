@@ -145,6 +145,7 @@
   </div>
 </section>
 
+{# Frequently Asked Questions (FAQ) Section #}
 <section class="questions">
   <div class="row justify-content-center">
     <div class="col-md-6">
@@ -196,13 +197,14 @@
 </section>
 
 <!-- Form-->
-
+{# Booking Section Header and Instructional Text #}
 <h2 class="booking-header" id="bottom">Let’s Get You Booked</h2>
 <p class="booking-tagline">
   For more details about what's included in each package, please visit our <a href="{% url 'services' %}">services</a> page.<br />Choose your
   booking method below:
 </p>
 
+{# Schedule Section with WhatsApp and Form Booking #}
 <section class="schedule">
   <div class="schedule-header">
     <h2 class="schedule-title">Schedule Your Appointment today</h2>
@@ -215,6 +217,7 @@
     </a>
   </div>
 
+  {# Online Booking Form #}
   <form method="post" class="booking-form">
     <h2>Online Booking Form</h2>
     <p>
@@ -228,6 +231,7 @@
     </button>
   </form>
 
+  {# Auto-scroll to form if there are validation errors #}
   {% if form.errors %}
   <script>
     // Scroll to the form on error
