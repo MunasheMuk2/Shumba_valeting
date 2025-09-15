@@ -230,6 +230,11 @@ The system uses Django ORM with models mapped to **PostgreSQL (production)**.
 - Added, updated, and deleted contact messages and bookings via Django Admin.  
 - Verified CRUD operations reflected immediately in UI regarding bookings.  
 
+### Authentication Testing (Sign Up / Log In / Log Out)
+-Sign-up functionality tested with valid and invalid data.
+-User log in and log out functionality was tested manually.
+-Confirmed correct redirection after login/logout.
+
 ### Responsive Testing
 - Tested on desktop, tablet, and mobile (Chrome DevTools).  
 - Grid layout adapts correctly.   
