@@ -456,7 +456,7 @@ CRUD operations verified through **UI** and **Django Admin**.
 
 + ### JSHint
 
- No errors or warnings were found when passing through the JS code in JSHint. Only  warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6. 
+ No errors or warnings were found when passing through the JS code in JSHint. 
 
    ![JSHint](screenshots/jshint.jpg)
 

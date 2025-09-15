@@ -11,6 +11,7 @@
 
 {# Intro Section #}
 <section class="main-section">
+  <div> 
   <p class="main-text">
     Skip the car wash queues — no more tedious trips to your local car wash.
     Simply reserve your bespoke mobile car valet and the Shumba Valeting team
@@ -24,6 +25,7 @@
   >
     Book Now
   </button>
+</div> 
 </section>
 
 {# Image Carousel Gallery Section - Bootstrap #}
@@ -123,15 +125,14 @@
           src="{% static 'images/car image.png' %}"
           class="img-fluid rounded mb-2"
           alt="icon of a car"
-        />
+        >
       </figure>
       <figure class="col-md-4">
         <figcaption><h2 class="services">Interior valeting</h2></figcaption>
         <img
           src="{% static 'images/seat.png' %}"
           class="img-fluid rounded mb-2"
-          alt="icon of a seat"
-        />
+          alt="icon of a seat">
       </figure>
       <figure class="col-md-4">
         <figcaption><h2 class="services">Engine valeting</h2></figcaption>
@@ -139,7 +140,7 @@
           src="{% static 'images/engine.png' %}"
           class="img-fluid rounded mb-2"
           alt="icon of an engine"
-        />
+        >
       </figure>
     </div>
   </div>
@@ -200,7 +201,7 @@
 {# Booking Section Header and Instructional Text #}
 <h2 class="booking-header" id="bottom">Let’s Get You Booked</h2>
 <p class="booking-tagline">
-  For more details about what's included in each package, please visit our <a href="{% url 'services' %}">services</a> page.<br />Choose your
+  For more details about what's included in each package, please visit our <a href="{% url 'services' %}">services</a> page.<br> Choose your
   booking method below:
 </p>
 
@@ -221,7 +222,7 @@
   <form method="post" class="booking-form">
     <h2>Online Booking Form</h2>
     <p>
-      This form is for <strong>car valeting only</strong>.<br />
+      This form is for <strong>car valeting only</strong>.<br>
       For other vehicles, please
       <a href="/contact"><strong>contact us</strong></a>
     </p>
