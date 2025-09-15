@@ -19,7 +19,7 @@
             <img class="services-images"src="{% static 'images/brush.jpg' %}" alt="Basic Valet">
             <h2>Basic Valet</h2>
             <p class="price">£25</p>
-            <p class="description">
+            <div  class="description">
                 Perfect for a quick refresh to keep your car looking tidy.<br><br>
                 Includes:
                 <ul class ="service-list">
@@ -28,15 +28,15 @@
                     <li>Interior vacuum</li>
                     <li>Windows cleaned (inside & out)</li>
                 </ul>
-            </p>
+            </div>
         </div>
 
         {# -Premium Valet - #}
         <div class="service-card">
-            <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
+            <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Basic Valet">
             <h2>Premium Valet</h2>
             <p class="price">£45</p>
-            <p class="description">
+            <div  class="description">
                 A deeper clean for both inside and outside.<br><br>
                 Includes:
                 <ul class ="service-list">
@@ -45,7 +45,7 @@
                     <li>Dashboard, vents & trims polished</li>
                     <li>Tyres dressed for a lasting shine</li>
                 </ul>
-            </p>
+            </div>
         </div>
 
         {# - Executive Valet - #}
@@ -53,7 +53,7 @@
             <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
             <h2>Executive Valet</h2>
             <p class="price">£70</p>
-            <p class="description">
+            <div  class="description">
                 For drivers who want their car in pristine condition.<br><br>
                 Includes:
                 <ul class ="service-list">
@@ -62,7 +62,7 @@
                     <li>Leather cleaned & conditioned</li>
                     <li>Exterior wax finish for paint protection</li>
                 </ul>
-            </p>
+            </div>
         </div>
 
         {# - Luxury Valet - #}
@@ -70,7 +70,7 @@
             <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
             <h2>Luxury Valet</h2>
             <p class="price">£120</p>
-            <p class="description">
+            <div  class="description">
                 The ultimate detailing experience for your vehicle.<br><br>
                 Includes:
                 <ul class ="service-list">
@@ -80,13 +80,11 @@
                     <li>Full interior detail (vents, switches, trim)</li>
                     <li>Engine bay cleaned & dressed</li>
                 </ul>
-            </p>
+            </div>
         </div>
     
     {# Booking Button at the Bottom #}
-    <button class="services-button"> 
-        <a href="{% url 'home' %}#bottom" class="btn">Book Now</a>
-    </button>
+    <button onclick="window.location.href='{% url 'home' %}#bottom'" class="services-button">Book Now</button>
 
 </div>
 </section>
