@@ -301,6 +301,15 @@ Deployment delays (waiting for GitHub Student Pack credits)
 - **Media**: Images sourced from [Unsplash](https://unsplash.com) & chatGPT. 
 - **Code References**: code institute and youtube tutorials
 
+## Technologies Used
+
+- [VSCode](https://code.visualstudio.com/)  Used as the main code editor
+- [GitHub](https://github.com/) code host for the site
+- [W3schools](https://www.w3schools.com/howto/howto_js_accordion.asp) 
+- Code institute tutorials for setting up models, apps, templates and heroku
+-**Favicons**: Sourced from [favicon](https://favicon.io/)
+---
+
 
 # TESTING
 
@@ -447,7 +456,9 @@ CRUD operations verified through **UI** and **Django Admin**.
 ---
 
 
+## Acknowledgments
 
+- [Code Institute](https://codeinstitute.net/) 
 
 
 
