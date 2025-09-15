@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 
 
+# This model stores messages sent through the "Contact Us" form
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()

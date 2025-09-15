@@ -165,7 +165,7 @@ The system uses Django ORM with models mapped to **PostgreSQL (production)**.
 - **Unique constraint** on (`date`, `time_slot`) – prevents double booking  
 
 ### Schema Characteristics
-- One-to-many: `User → Bookings`, `Package → Bookings`.  
+- One-to-many: `User to Bookings`, `Package to Bookings`.  
 
 ---
 

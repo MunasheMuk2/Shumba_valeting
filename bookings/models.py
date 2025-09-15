@@ -1,4 +1,4 @@
-#Assisted with models by watching tech with Tim on youtube - particulary learn Django in 20mins video
+# Assisted with models by watching tech with Tim on youtube - particulary learn Django in 20mins video
 # Import Django's model system
 from django.db import models
 
