@@ -45,9 +45,9 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 2. Input fields on the booking form are logically grouped to guide the user through step-by-step data entry
 
-3. The  buttons on home page are positioned to work as call to actions 
+3. The  booking buttons are positioned to work as call to actions 
 
-4. Images added to show users examples of thw work Shumba valeting does
+4. Images added to show users examples of the work Shumba valeting does
 
 
 ### Colour Scheme
@@ -71,7 +71,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ##  Navigation Bar
 
-- Placed at the top of every page, with links to **Home**, **Services**, **Contact**, and **Booking**.  
+- Placed at the top of every page, with links to **Home**, **Services**,**Contact**, **Sign up** and **Login**
 - Fully responsive across desktop and mobile.  
 - On mobile, the navigation bar collapses into a **burger menu** for easier navigation.  
 
@@ -84,7 +84,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 **Features:**
 
 - Brand introduction with clear messaging.  
--  Call-to-action buttons directing users to the **Booking** page.  
+-  Call-to-action buttons directing users to the **Booking** section.  
 
 ![Home Page](screenshots/homepage.jpg)
 
@@ -106,7 +106,6 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 **Features:**
 
 - Contact form with fields for user details.  
-- Built-in **validation** and error handling.  
 - Submit button to send user inquiries.  
 
 ![Contact Page](screenshots/contactpage.jpg)
@@ -132,7 +131,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 - Displays a list of all the user’s **upcoming bookings**.  
 - Shows key details: **date, time slot, package, and action buttons**.  
 - Allows users to **cancel bookings** with a confirmation prompt.  
-- If no bookings exist, shows a friendly message: *"You have no bookings yet."*  
+- If no bookings exist, shows a message: *"You have no bookings yet."*  
 
 ![My Bookings Page](screenshots/mybookingspage.jpg)
 
@@ -179,6 +178,8 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
   - **Read**: Services, bookings, and contact messages.  
   - **Update**: Admin updates booking records and contact messages.  
   - **Delete**: Admin removes bookings or contact messages.  
+![Admin Page](screenshots/admin.jpg)
+
 - **User Feedback**: Messages framework provides alerts (e.g., “Booking confirmed”, “Time slot already taken”).  
 - **Responsive Design**: Works seamlessly across desktops, tablets, and mobiles.  
 
@@ -250,30 +251,32 @@ The system uses Django ORM with models mapped to **PostgreSQL (production)**.
 
 ### Solved bugs
 
-1. Although I had created a superuser locally, I had to recreate the superuser on heroku so the admin panel could show up 
+1. Although I had created a superuser locally, I had to recreate the superuser on heroku so the admin panel could show up.
 
-2. The booking form was showing an error like "Select a valid choice" for the package or time slot, even when the options looked right. Amended the packages to make sure they were in the data base, made sure the timeslots were being correctly passed into the form and updated mismatch between my local code and Heroku by updating  models and running migrations properly. (This issue came up because Heroku wasn't deployed on time—I had to wait for my GitHub Student Pack to get free credits for hosting.)
+2. The booking form was showing an error like "Select a valid choice" for the package or time slot, even when the options looked right. Amended the packages to make sure they were in the data base, made sure the timeslots were being correctly passed into the form and updated mismatch between my local code and Heroku by updating  models and running migrations properly. (This issue came up because Heroku wasn't deployed on time—I had to wait for my GitHub Student Pack to get free credits for hosting).
 
-3. Had an issue with fave icons not working with normal links in base.html and so has to use template tags
+3. Had an issue with favicons not working with normal links in base.html and so had to use template tags.
 
 ---
 
 ### Unsolved bugs
 
 1. Attempted to have a pop up alert message when there is a duplicate booking but site kept generating a message on the booking for due to the Django auto generated message from errors. Had to resort to using javascript within the home.html where the form is selected to scroll to the form on error. However the issue with the pop up message still stands as won't work. 
+
+2. Issue with my bookings page showing an error in HTML checker regarding an aria label but there are no aria labels advised on the page or on login page etc. 
 ---
 
 ## Deployment
 
 ### Local Deployment
-git clone https://github.com/MunasheMuk2/Shumba_valeting.git
-cd shumba-valeting
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
+- git clone https://github.com/MunasheMuk2/Shumba_valeting.git
+- cd shumba-valeting
+- python -m venv venv
+- venv\Scripts\activate
+- pip install -r requirements.txt
+- python manage.py migrate
+- python manage.py createsuperuser
+- python manage.py runserver
 
 ---
 
@@ -319,7 +322,7 @@ Deployment delays (waiting for GitHub Student Pack credits)
 ---
 
 
-# TESTING
+# Further testing
 
 ## Compatibility
 
@@ -413,9 +416,8 @@ CRUD operations verified through **UI** and **Django Admin**.
 
 | Entity | Create | Read | Update | Delete | UI Reflection |
 |---|---|---|---|---|---|
-| Service | Admin adds service | Services page lists correctly | Admin edits service | Admin deletes service | Changes visible immediately on `/services` |
+| Service | Admin adds package | Booking form lists correctly | Admin edits package | Admin deletes package | Changes visible immediately on booking form on the home page |
 | Booking | User submits form | Admin can view; user sees message | Admin edits record/slot | Admin deletes record | Changes reflected: duplicates blocked, messages updated |
-| Contact | User submits form | Admin can read | (N/A for user) | Admin deletes | (Back-office only) |
 
 
 
@@ -450,11 +452,8 @@ CRUD operations verified through **UI** and **Django Admin**.
    
 ![Booking Page HTML Validator](screenshots/bookingvalidator.jpg)
 
-- No errors or warnings found relating to my bookings page - error for aria label descirbed is non existant. Checked all templates that include a login form, especially:
-- `login.html`
--`home.html` 
-- `base.html` 
-
+- No errors or warnings found relating to my bookings page - error for aria label descirbed is non existant. Checked all templates that include a login form, especially:`login.html` , `home.html` and `base.html` 
+ 
 ---
 + ### CSS
   No errors or warnings were found when passing through the official W3C (Jigsaw) validator 
