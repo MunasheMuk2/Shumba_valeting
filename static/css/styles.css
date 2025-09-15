@@ -3,12 +3,13 @@
 
 /*Wildcard selector to change browser default styles */
 
-
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
+/* Remove extra space above/below main sections */
 
 .main-section,
 .main-services,
@@ -83,7 +84,7 @@ nav.navbar {
     text-align: left;
 }
 
-/* Nav image  */
+/* Nav image - banner image below navigation bar */
 .nav-image-wrapper {
     width: 100%;
     text-align: center;  /* centers image if not full width */
@@ -95,7 +96,7 @@ nav.navbar {
     display: inline-block;
 }
 
-/* Body */
+/* Main Body */
 
 main, .main-section, .content {
     flex: 1; /* This allows content to grow and push footer down */
@@ -111,6 +112,7 @@ main, .main-section, .content {
     text-align:center;
 }
 
+/* "Book Now" button */
 
 .main-button {
         color:white;
@@ -170,7 +172,7 @@ main, .main-section, .content {
 }
 
 
-/* FAQ */
+/* FAQ Section */
 
 .questions{
     margin-top:3rem;
@@ -199,7 +201,7 @@ main, .main-section, .content {
     width:70%;
 }
 
-
+/* WhatsApp booking button */
 
 .whatsapp-button {
     color:white;
@@ -228,14 +230,14 @@ margin-left:21rem;
 }
 
 .booking-form {
-    background: #000; /* black background */
-    color: #fff;      /* white text */
+    background: #000; 
+    color: #fff;
     max-width: 500px; /* allow more width for 2 columns */
     margin: 30px auto; 
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-    font-size: 0.9rem; /* more compact text */
+    font-size: 0.9rem; 
     margin-bottom:2rem;
     width:100%;
 }
@@ -243,7 +245,7 @@ margin-left:21rem;
 /* Default input styling */
 .booking-form input, 
 .booking-form select {
-    width: 100%; /* full width inside their flex container */
+    width: 100%; 
     padding: 8px;
     margin-bottom: 12px;
     border: 1px solid #444;
@@ -307,6 +309,8 @@ font-size: 20px;
 .accordion.active::after {
   content: "−"; /* Changes to minus when clicked due to the function in javascript */
 }
+
+/* Footer */
 
 .footer { 
     position: relative; /*position, left and bottom - make the footer stay at the bottom*/
@@ -490,6 +494,10 @@ font-size: 20px;
     width: auto !important;
     display: inline-block !important;
     border:none !important;
+}
+
+.log-out{
+    margin-bottom:15rem;
 }
 
 @media only screen and (max-width: 1036px) {
