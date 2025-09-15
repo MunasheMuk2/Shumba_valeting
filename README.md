@@ -163,9 +163,9 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
   - **Create**: Bookings and messages.  
   - **Read**: Services, bookings, and contact messages.  
-  - **Update**: Admin updates booking records and services.  
-  - **Delete**: Admin removes bookings or services.  
-- **User Feedback**: Django messages framework provides alerts (e.g., “Booking confirmed”, “Time slot already taken”).  
+  - **Update**: Admin updates booking records and contact messages.  
+  - **Delete**: Admin removes bookings or contact messages.  
+- **User Feedback**: Messages framework provides alerts (e.g., “Booking confirmed”, “Time slot already taken”).  
 - **Responsive Design**: Works seamlessly across desktops, tablets, and mobiles.  
 
 
@@ -208,22 +208,15 @@ The system uses Django ORM with models mapped to **PostgreSQL (production)**.
 
 ### Manual Testing
 - Forms tested with valid/invalid inputs. Validation errors display correctly.  
-- Duplicate booking attempts rejected gracefully with error message.  
+- Duplicate booking attempts rejected with error message.  
 
 ### CRUD Testing
-- Added, updated, and deleted services and bookings via Django Admin.  
-- Verified CRUD operations reflected immediately in UI.  
+- Added, updated, and deleted contact messages and bookings via Django Admin.  
+- Verified CRUD operations reflected immediately in UI regarding bookings.  
 
 ### Responsive Testing
 - Tested on desktop, tablet, and mobile (Chrome DevTools).  
-- Grid layout adapts correctly.  
-
-### Browser Testing
-- Works in Chrome, Firefox, Safari, Edge.  
-
-### Accessibility
-- Checked colour contrast with Lighthouse.  
-- Semantic HTML (headings, lists, alt text).  
+- Grid layout adapts correctly.   
 
 ---
 
