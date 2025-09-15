@@ -497,7 +497,7 @@ font-size: 20px;
 }
 
 .log-out{
-    margin: 40px auto 15rem auto;
+    padding-bottom: 15rem;
 }
 
 @media only screen and (max-width: 1036px) {
