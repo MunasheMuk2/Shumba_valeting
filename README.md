@@ -124,6 +124,19 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
+## My Bookings Page
+
+**Features:**
+
+- Displays a list of all the user’s **upcoming bookings**.  
+- Shows key details: **date, time slot, package, and action buttons**.  
+- Allows users to **cancel bookings** with a confirmation prompt.  
+- If no bookings exist, shows a friendly message: *"You have no bookings yet."*  
+
+![My Bookings Page](screenshots/mybookingspage.jpg)
+
+---
+
 
 ##  Sign Up Page
 
