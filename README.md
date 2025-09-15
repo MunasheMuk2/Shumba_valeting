@@ -449,16 +449,17 @@ CRUD operations verified through **UI** and **Django Admin**.
    
 ![Booking Page HTML Validator](screenshots/bookingvalidator.jpg)
 
-- No errors or warnings were found when passing through the official W3C validator.
+- No errors or warnings found relating to my bookings page - error for aria label descirbed is non existant. Checked all templates that include a login form, especially:
+- `login.html`
+-`home.html` 
+- `base.html` 
 
-
-
-    
+---
 + ### CSS
   No errors or warnings were found when passing through the official W3C (Jigsaw) validator 
     ![CSS](screenshots/cssvalidator.jpg)
 
- ---
+---
 
 + ### JSHint
 
