@@ -6,6 +6,7 @@ The site has a complete CRUD implementation, responsive design, and database mod
 
 - [Site link](https://shumba-app-20d8670cc25d.herokuapp.com/)
 
+![Home page](screenshots/homepage.jpg)
 
 ## User Experience (UX)
 
