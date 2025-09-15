@@ -47,6 +47,10 @@ body, p, a, li {
     font-family: 'Open Sans', sans-serif;
 }
 
+main, .main-section, .content {
+    flex: 1; /* This allows content to grow and push footer down */
+}
+
 
 /* Navbar */
 
@@ -96,12 +100,11 @@ nav.navbar {
     display: inline-block;
 }
 
+
 /* Main Body */
-
-main, .main-section, .content {
-    flex: 1; /* This allows content to grow and push footer down */
+.visually-hidden{
+    display:none;
 }
-
 
 .main-section{
     margin-top:-2rem;

@@ -419,31 +419,37 @@ CRUD operations verified through **UI** and **Django Admin**.
 
 
 ## Validator testing
-+ ### HTML
+## HTML Validation
 
-  #### Landing Page
+#### Landing Page
    
-    ![Landing Page HTML Validator](screenshots/htmlvalidator.jpg).
+![Landing Page HTML Validator](screenshots/htmlvalidator.jpg)
 
-     - No errors or warnings were found when passing through the official W3C validator.
+- No errors or warnings were found when passing through the official W3C validator.
 
-      #### Vehicle guide Page
+---
+
+#### Services Page
    
-    ![Vehicle guide Page HTML Validator](screenshots/vehicleguidevalidator.jpg).
+![Services Page HTML Validator](screenshots/servicesvalidator.jpg)
 
-     - No errors or warnings were found when passing through the official W3C validator.
+- No errors or warnings were found when passing through the official W3C validator.
 
-     #### Contact us Page
+---
+
+#### Contact Page
    
-    ![Contact us Page HTML Validator](screenshots/contactusvalidator.jpg).
+![Contact Page HTML Validator](screenshots/contactusvalidator.jpg)
 
-     - No errors or warnings were found when passing through the official W3C validator.
+- No errors or warnings were found when passing through the official W3C validator.
 
- #### Contact sucess Page
+---
+
+#### Booking Page
    
-   ![Contact sucess Page HTML Validator](screenshots/successvalidator.jpg).
+![Booking Page HTML Validator](screenshots/bookingvalidator.jpg)
 
-     - No errors or warnings were found when passing through the official W3C validator.
+- No errors or warnings were found when passing through the official W3C validator.
 
 
 
