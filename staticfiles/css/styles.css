@@ -1,0 +1,167 @@
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*Wildcard selector to change browser default styles */
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+
+/* General styles */
+
+body{
+    min-height: 100vh;
+    width:100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body, p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Navbar */
+
+.nav-left{
+    padding-left:3rem !important;
+}
+
+nav.navbar {
+    background-color: #000 !important;
+}
+
+#log{
+    padding-left:5px;
+}
+
+.nav-link{
+    color:white !important;
+    font-size:14px;
+}
+
+.lion-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.brand-text {
+    line-height: 1;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+.brand-line {
+    display: block;
+    text-align: left;
+}
+
+/* Nav image  */
+.nav-image-wrapper {
+    width: 100%;
+    text-align: center;  /* centers image if not full width */
+}
+
+.nav-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/* Booking form */
+
+.booking-form {
+    background: #000; /* black background */
+    color: #fff;      /* white text */
+    max-width: 500px; /* allow more width for 2 columns */
+    margin: 30px auto; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    font-size: 0.9rem; /* more compact text */
+}
+
+/* Default input styling */
+.booking-form input, 
+.booking-form select {
+    width: 100%; /* full width inside their flex container */
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+}
+
+.booking-form input::placeholder {
+    color: #bbb;
+}
+
+
+.booking-form button {
+    background: silver;
+    color: black;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.booking-form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* For background color to buttons when clicked (added the .active class with JS) */
+.active, .accordion:hover {
+    background-color: #ccc;
+    color: #000
+
+}
+
+.accordion {
+    border:none;
+    background-color:black;
+    color:white;
+    width:100%;
+    text-align:left;
+
+}
+
+.panel{
+display:none;
+}
+
+  /* code amended from W3schools */
+
+.accordion::after {
+content: "+"; /* To show plus sign originally */
+float: right;
+margin-left: 10px;
+font-size: 20px;
+}
+
+/* When active */
+.accordion.active::after {
+  content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
+
+@media only screen and (max-width: 576px) {
+
+.text-center {
+    color:red !important;
+}
+
+
+.nav-item {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}

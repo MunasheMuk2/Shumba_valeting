@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Shumba Valeting{% endblock %}
+
+{% block nav_image %}
+<!-- No image by default -->
+{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <p> Your car deserves the best – we’d love to hear from you.</p>
+
+    <form method="post" class="contact-form">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.name.label_tag }}
+            {{ form.name }}
+        </div>
+        <div class="form-group">
+            {{ form.email.label_tag }}
+            {{ form.email }}
+        </div>
+        <div class="form-group">
+            {{ form.message.label_tag }}
+            {{ form.message }}
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+{% if messages %}
+    <script>
+        {% for message in messages %}
+        alert("{{ message }}");
+        {% endfor %}
+    </script>
+{% endif %}
+
+</div>
+{% endblock %}

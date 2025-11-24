@@ -1,0 +1,93 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block title%} Services - Shumba Valeting {%endblock%}
+
+{% block nav_image %}
+<!-- No image by default -->
+{% endblock %}
+
+
+{%block content%}
+<section class="services-section">
+    <h1 class="services-heading">Our Valet Packages</h1>
+    <p class="services-subtitle">Choose the perfect valet service for your car:</p>
+
+    <div class="services-grid">
+        <!-- Basic Valet -->
+        <div class="service-card">
+            <img class="services-images"src="{% static 'images/brush.jpg' %}" alt="Basic Valet">
+            <h2>Basic Valet</h2>
+            <p class="price">£25</p>
+            <p class="description">
+                Perfect for a quick refresh to keep your car looking tidy.<br><br>
+                Includes:
+                <ul class ="service-list">
+                    <li>Exterior hand wash & rinse</li>
+                    <li>Wheels cleaned & dressed</li>
+                    <li>Interior vacuum</li>
+                    <li>Windows cleaned (inside & out)</li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Premium Valet -->
+        <div class="service-card">
+            <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
+            <h2>Premium Valet</h2>
+            <p class="price">£45</p>
+            <p class="description">
+                A deeper clean for both inside and outside.<br><br>
+                Includes:
+                <ul class ="service-list">
+                    <li>All Basic Valet services</li>
+                    <li>Door shuts & sills cleaned</li>
+                    <li>Dashboard, vents & trims polished</li>
+                    <li>Tyres dressed for a lasting shine</li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Executive Valet -->
+        <div class="service-card">
+            <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
+            <h2>Executive Valet</h2>
+            <p class="price">£70</p>
+            <p class="description">
+                For drivers who want their car in pristine condition.<br><br>
+                Includes:
+                <ul class ="service-list">
+                    <li>All Premium Valet services</li>
+                    <li>Seats, carpets & mats shampooed</li>
+                    <li>Leather cleaned & conditioned</li>
+                    <li>Exterior wax finish for paint protection</li>
+                </ul>
+            </p>
+        </div>
+
+        <!-- Luxury Valet -->
+        <div class="service-card">
+            <img class="services-images" src="{% static 'images/brush.jpg' %}" alt="Premium Valet">
+            <h2>Luxury Valet</h2>
+            <p class="price">£120</p>
+            <p class="description">
+                The ultimate detailing experience for your vehicle.<br><br>
+                Includes:
+                <ul class ="service-list">
+                    <li>All Executive Valet services</li>
+                    <li>Machine polish for paintwork enhancement</li>
+                    <li>Ceramic coating or premium wax protection</li>
+                    <li>Full interior detail (vents, switches, trim)</li>
+                    <li>Engine bay cleaned & dressed</li>
+                </ul>
+            </p>
+        </div>
+
+    <button class="services-button"> 
+        <a href="{% url 'home' %}#bottom" class="btn">Book Now</a>
+    </button>
+
+</div>
+</section>
+
+{%endblock%}

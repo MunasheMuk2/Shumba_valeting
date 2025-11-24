@@ -1,0 +1,585 @@
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*Wildcard selector to change browser default styles */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.main-section,
+.main-services,
+.schedule {
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+}
+
+
+/* General styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100% !important;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100%;
+
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body, p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Navbar */
+
+.nav-left{
+    padding-left:3rem !important;
+}
+
+nav.navbar {
+    background-color: #000 !important;
+}
+
+#log{
+    padding-left:5px;
+}
+
+.nav-link{
+    color:white !important;
+    font-size:14px;
+}
+
+.lion-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.brand-text {
+    line-height: 1;
+    font-size: 1rem;
+    color: #f5f5f5;
+}
+
+.brand-line {
+    display: block;
+    text-align: left;
+}
+
+/* Nav image  */
+.nav-image-wrapper {
+    width: 100%;
+    text-align: center;  /* centers image if not full width */
+}
+
+.nav-image {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* Body */
+
+main, .main-section, .content {
+    flex: 1; /* This allows content to grow and push footer down */
+}
+
+
+.main-section{
+    margin-top:-2rem;
+}
+
+.main-header{
+    font-size:20px;
+    text-align:center;
+}
+
+/* .main-text{
+    text-wrap: nowrap;
+    text-align: center;
+} */
+
+.main-button {
+        color:white;
+        background-color: black;
+        border:2px solid black;
+        padding: 6px;
+        margin-bottom: 3rem;
+        border: 2px solid black;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+}
+
+.main-image{
+    float:right !important;
+    width: 480px;
+    height: 300px; 
+}
+
+/* Gallery */
+
+.gallery{
+    width:700px;
+    height: auto;  /*fixes margins on page so content does not overlap*/
+    /* margin-top:5rem;
+    margin-left: 18rem; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3rem !important;
+}
+
+.gallery-header{
+    text-align:center;
+}
+
+/* Service benefits */
+
+.benefits{
+    margin-top: -1rem;
+}
+
+/* Our Services  */
+
+.img-fluid {
+    width:250px;
+    height:250px;
+}
+
+.main-services{
+    background-color:black;
+    color:white;
+}
+
+.services{
+    font-size:20px;
+    width:90%;
+}
+
+
+/* FAQ */
+
+.questions{
+    margin-top:3rem;
+}
+
+
+/* Booking section*/
+
+.booking-header{
+    margin-top:6rem;
+    margin-left:25rem;
+}
+
+.booking-tagline{
+    margin-left:11rem;
+}
+
+.schedule-header{
+    margin-top:15rem;
+    text-wrap:wrap;
+    width:25%;
+    font-size:50px;
+}
+
+.form{
+    width:70%;
+}
+
+
+
+.whatsapp-button {
+    color:white;
+    background-color: black;
+    padding: 8px;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    /* margin: 0 auto; */
+    /* display: block; */
+    margin-top:15rem;
+    width:175px;
+    text-align:center;
+    text-decoration:none;
+
+}
+
+/* Booking form */
+
+.schedule {
+    /* margin-top:1rem; */
+    display:flex;
+    flex-direction:row;
+
+}
+
+.booking-tagline{
+margin-left:21rem;
+}
+
+.booking-form {
+    background: #000; /* black background */
+    color: #fff;      /* white text */
+    max-width: 500px; /* allow more width for 2 columns */
+    margin: 30px auto; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    font-size: 0.9rem; /* more compact text */
+    margin-bottom:2rem;
+    width:100%;
+}
+
+/* Default input styling */
+.booking-form input, 
+.booking-form select {
+    width: 100%; /* full width inside their flex container */
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+}
+
+.booking-form input::placeholder {
+    color: #bbb;
+}
+
+
+.booking-form button {
+    background: silver;
+    color: black;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.booking-form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* For background color to buttons when clicked (added the .active class with JS) */
+.active, .accordion:hover {
+    background-color: #ccc;
+    color: #000
+
+}
+
+.accordion {
+    border:5px solid black;
+    background-color:black;
+    color:white;
+    width:100%;
+    text-align:left;
+
+}
+
+.panel{
+display:none;
+}
+
+  /* code amended from W3schools */
+
+.accordion::after {
+content: "+"; /* To show plus sign originally */
+float: right;
+margin-left: 10px;
+font-size: 20px;
+}
+
+/* When active */
+.accordion.active::after {
+  content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
+
+.footer { 
+    position: relative; /*position, left and bottom - make the footer stay at the bottom*/
+    left: 0;
+    bottom: 0;
+    background-color:black;
+    width:100%;
+    height: 2.5rem;
+    margin-top: auto;
+    color: white;
+    text-decoration: none;
+    padding-top:15px;
+    padding-bottom:30px;
+    font-size:12px;
+    text-wrap:nowrap;
+
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color:white;
+    margin-left:1rem;
+    justify-content:center;
+
+}
+
+/* Services page */
+
+.services-section {
+    padding: 60px 20px;
+    background-color: #111; 
+    color: #fff;
+    text-align: center;
+    margin-bottom:3rem !important;
+    width:90%;
+    margin:auto;
+
+}
+
+.services-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #c0c0c0;
+}
+
+.services-images{
+    width:400px;
+    height: auto; 
+    width: 100%;         /* take full width of card */
+    max-width: 400px;
+    height: auto; 
+    margin: 0 auto;  
+    display: block;
+}
+
+.service-card h2 {
+    margin-top:2rem;
+}
+
+.services-button{
+    color:black;
+    background-color: silver;
+    padding: 2px;
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    margin: 0 auto;
+    /* display: block; */
+    width:155px;
+    text-align:center;
+    text-decoration:none;
+}
+
+.service-list {
+    list-style: none;
+}
+
+
+/* Contact page */
+
+
+.contact-container h1 p {
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-container{
+    background-color:black;
+    color:white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    font-size:15px; 
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.contact-form {
+    text-align:center;
+}
+
+.form-group{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color:silver;
+    color:black;
+    border:none;
+}
+
+.contact-form button:hover{
+    background: #fff;
+    color: #000;
+}
+
+ /* Sign up */
+
+.sign-up{
+    margin-bottom:8rem;
+    background-color:black;
+    color:white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    font-size:15px; 
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.sign-button {
+    color: black !important;
+    background-color: silver !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    width: auto !important;
+    display: inline-block !important;
+    border:none !important;
+}
+
+.log-in{
+    margin-bottom:15rem;
+    background-color:black;
+    color:white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    font-size:15px; 
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.login{
+    background-color:black;
+    color:white;
+    border-radius: 10px;
+}
+
+.login-button {
+    color: black !important;
+    background-color: silver !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    width: auto !important;
+    display: inline-block !important;
+    border:none !important;
+}
+
+@media only screen and (max-width: 1036px) {
+
+
+    .main-services{
+        margin-bottom:-9rem !important;
+    }
+
+    .schedule {
+        display: flex;
+        flex-direction: column; /* stack vertically */
+        align-items: center;     /* center horizontally */
+        justify-content: center; /* center vertically if needed */
+        width: 100%;
+        margin: auto;
+        margin-top:-3rem !important;
+}
+
+    .schedule-title{
+        display:none;
+    }
+
+    .schedule-header,
+    .form {
+    width: 90% !important;
+    margin-left: 0 !important;
+    text-align: center;
+    margin-top:3rem;
+    }
+
+    .booking-header,
+    .booking-tagline {
+    margin-left: 0 !important;
+    text-align: center;
+    }
+
+    .whatsapp-button {
+    margin-top: 2rem !important;
+    }    
+
+    .gallery {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+
+    .questions{
+        margin-top:12rem;
+    }
+
+    /* Services page */
+
+    .services-button{
+        padding: 0px;
+        font-size: 15px;
+        width:155px;
+    }
+
+
+} 
+
+/*Align nav links in on small screen */
+
+@media only screen and (max-width: 990px) {
+
+    .right-link { 
+        margin-left:3rem;
+    
+    }
+
+}
+
+@media only screen and (max-width: 575.98px) {
+
+    .footer { 
+        font-size:10.5px;
+        text-wrap:wrap;
+    
+    }
+
+}

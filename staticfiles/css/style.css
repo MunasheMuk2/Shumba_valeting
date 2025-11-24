@@ -1,0 +1,53 @@
+.booking-form {
+    background: #000; /* black background */
+    color: #fff;      /* white text */
+    max-width: 350px; /* slightly narrower */
+    margin: 30px auto; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    font-size: 0.9rem; /* more compact text */
+}
+
+.booking-form input, 
+.booking-form select {
+    width: 90%;
+    padding: 8px;  /* smaller padding for compactness */
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #222; /* dark grey input background */
+    color: #fff;      /* white text inside fields */
+}
+
+.booking-form input::placeholder {
+    color: #bbb; /* lighter placeholder text */
+}
+
+.booking-form button {
+    background: silver;
+    color: red;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.booking-form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+nav.navbar {
+    background-color: #000 !important;
+}
+
+
+
+.lion{
+    width:50%;
+    color:red
+}
