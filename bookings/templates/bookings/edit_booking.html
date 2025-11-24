@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Edit Booking Date{% endblock %}
+{% block title %}Edit Booking - Shumba Valeting{% endblock %}
 
 {% block content %}
-<h2>Edit Booking Date</h2>
+<h2>Edit Booking</h2>
 <form method="post">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit" class="btn btn-success">Save Date</button>
+  <button type="submit" class="btn btn-success">Save Changes</button>
   <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Back</a>
 </form>
 {% endblock %}

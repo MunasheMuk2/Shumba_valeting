@@ -1,3 +1,4 @@
+import datetime
 from django import forms
 from .models import Booking
 
@@ -17,15 +18,27 @@ class BookingForm(forms.ModelForm):
         labels = {
             "car_make_model": "Car Make & Model e.g. Toyota Hilux",
         }
-        # Date widget from - https://www.geeksforgeeks.org/python/django-form-field-custom-widgets/
-        # time field - https://studygyaan.com/django/date-picker-in-django#google_vignette
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
         }
 
+    def clean_date(self):
+        date = self.cleaned_data["date"]
+        if date < datetime.date.today():
+            raise forms.ValidationError("You cannot book a date in the past.")
+        return date
 
-class BookingDateForm(forms.ModelForm):
-    class Meta:
-        model = Booking
-        fields = ["date"]
-        widgets = {"date": forms.DateInput(attrs={"type": "date"})}
+    def clean(self):
+        cleaned_data = super().clean()
+        date = cleaned_data.get("date")
+        time_slot = cleaned_data.get("time_slot")
+
+        if date == datetime.date.today() and time_slot:
+            now = datetime.datetime.now().time()
+            slot_time = datetime.datetime.strptime(time_slot, "%H:%M").time()
+            if slot_time < now:
+                raise forms.ValidationError(
+                    "You cannot book a time slot that has already passed today."
+                )
+
+        return cleaned_data

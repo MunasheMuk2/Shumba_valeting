@@ -50,12 +50,17 @@ def my_bookings(request):
 def edit_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, user=request.user)
     if request.method == "POST":
-        form = BookingDateForm(request.POST, instance=booking)
+        form = BookingUpdateForm(request.POST, instance=booking)
         if form.is_valid():
-            form.save()
-            messages.success(request, "Booking date updated successfully.")
-            return redirect("my_bookings")
+            try:
+                form.save()
+                messages.success(request, "Booking updated successfully.")
+                return redirect("my_bookings")
+            except IntegrityError:
+                messages.error(
+                    request, "That time slot is already taken. Please choose another."
+                )
     else:
-        form = BookingDateForm(instance=booking)
+        form = BookingUpdateForm(instance=booking)
 
     return render(request, "bookings/edit_booking.html", {"form": form})
