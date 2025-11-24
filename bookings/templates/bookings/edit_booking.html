@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Edit Booking Date{% endblock %}
+
+{% block content %}
+<h2>Edit Booking Date</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-success">Save Date</button>
+  <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Back</a>
+</form>
+{% endblock %}
