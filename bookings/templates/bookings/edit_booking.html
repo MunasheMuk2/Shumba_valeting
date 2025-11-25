@@ -2,11 +2,48 @@
 {% block title %}Edit Booking - Shumba Valeting{% endblock %}
 
 {% block content %}
+
 <h2>Edit Booking</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit" class="btn btn-success">Save Changes</button>
-  <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Back</a>
+
+<div id="edit-booking-messages">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+<form method="post" id="edit-booking-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Back</a>
 </form>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Detect Django field errors inside the form
+    const fieldErrors = document.querySelector("#edit-booking-form .errorlist");
+
+    // Detect Django flash messages
+    const flashErrors = document.querySelector("#edit-booking-messages .alert");
+
+    // If ANY kind of error exists → scroll to edit form
+    if (fieldErrors || flashErrors) {
+        document.getElementById("edit-booking-form")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // Focus first offending field for better UX
+        const invalidField = document.querySelector(
+            "#edit-booking-form .errorlist + input, #edit-booking-form .errorlist + select"
+        );
+        if (invalidField) {
+            invalidField.focus();
+        }
+    }
+});
+</script>
+
 {% endblock %}
