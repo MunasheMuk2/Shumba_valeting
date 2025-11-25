@@ -229,18 +229,25 @@ Valeting{% endblock %}
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const alerts = document.querySelectorAll("#form-messages .alert");
-    if (alerts.length > 0) {
-      document.querySelector("#form-messages").scrollIntoView({ behavior: "smooth", block: "start" });
-      // Focus the first invalid field if present
-      const errorField = document.querySelector(".errorlist + input, .errorlist + select");
-      if (errorField) {
-        errorField.focus();
+  document.addEventListener("DOMContentLoaded", function () {
+      // Detect Django form field errors
+      const formErrors = document.querySelector(".booking-form .errorlist");
+  
+      // Detect Django messages
+      const msgErrors = document.querySelector("#form-messages .alert");
+  
+      if (formErrors || msgErrors) {
+          const formSection = document.getElementById("booking-form");
+          formSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  
+          // Focus first invalid field (optional)
+          const invalidField = document.querySelector(".errorlist + input, .errorlist + select");
+          if (invalidField) {
+              invalidField.focus();
+          }
       }
-    }
   });
-</script>
+  </script>
 
 
 {% endblock %}
