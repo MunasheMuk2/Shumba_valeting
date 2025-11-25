@@ -230,12 +230,17 @@ Valeting{% endblock %}
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const messages = document.querySelector("#form-messages");
-    if (messages && messages.innerText.trim() !== "") {
-      // Smoothly scroll the booking form into view when messages exist
-      document.querySelector("#booking-form").scrollIntoView({ behavior: "smooth" });
+    const alerts = document.querySelectorAll("#form-messages .alert");
+    if (alerts.length > 0) {
+      document.querySelector("#form-messages").scrollIntoView({ behavior: "smooth", block: "start" });
+      // Focus the first invalid field if present
+      const errorField = document.querySelector(".errorlist + input, .errorlist + select");
+      if (errorField) {
+        errorField.focus();
+      }
     }
   });
 </script>
+
 
 {% endblock %}
