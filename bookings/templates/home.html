@@ -203,7 +203,18 @@ Valeting{% endblock %}
     </a>
   </div>
 
-  <form method="post" class="booking-form">
+  <div id="form-messages">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+  
+
+  <form method="post" id="booking-form" class="booking-form">
     <h2>Online Booking Form</h2>
     <p>
       This form is for <strong>car valeting only</strong>.<br />
@@ -216,4 +227,15 @@ Valeting{% endblock %}
     </button>
   </form>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const messages = document.querySelector("#form-messages");
+    if (messages && messages.innerText.trim() !== "") {
+      // Smoothly scroll the booking form into view when messages exist
+      document.querySelector("#booking-form").scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
+
 {% endblock %}
