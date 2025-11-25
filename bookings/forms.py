@@ -23,8 +23,8 @@ class BookingForm(forms.ModelForm):
         }
 
     def clean_date(self):
-        date = self.cleaned_data["date"]
-        if date < datetime.date.today():
+        date = self.cleaned_data.get("date")
+        if date and date < datetime.date.today():
             raise forms.ValidationError("You cannot book a date in the past.")
         return date
 
@@ -35,7 +35,14 @@ class BookingForm(forms.ModelForm):
 
         if date == datetime.date.today() and time_slot:
             now = datetime.datetime.now().time()
-            slot_time = datetime.datetime.strptime(time_slot, "%H:%M").time()
+
+            # Extract first hour from slot like "15-17"
+            try:
+                start_hour = int(time_slot.split("-")[0])
+                slot_time = datetime.time(start_hour, 0)
+            except Exception:
+                raise forms.ValidationError("Invalid time slot format.")
+
             if slot_time < now:
                 raise forms.ValidationError(
                     "You cannot book a time slot that has already passed today."
@@ -59,8 +66,8 @@ class BookingUpdateForm(forms.ModelForm):
         }
 
     def clean_date(self):
-        date = self.cleaned_data["date"]
-        if date < datetime.date.today():
+        date = self.cleaned_data.get("date")
+        if date and date < datetime.date.today():
             raise forms.ValidationError("You cannot book a date in the past.")
         return date
 
@@ -71,9 +78,17 @@ class BookingUpdateForm(forms.ModelForm):
 
         if date == datetime.date.today() and time_slot:
             now = datetime.datetime.now().time()
-            slot_time = datetime.datetime.strptime(time_slot, "%H:%M").time()
+
+            # Extract the starting hour exactly the same way
+            try:
+                start_hour = int(time_slot.split("-")[0])
+                slot_time = datetime.time(start_hour, 0)
+            except Exception:
+                raise forms.ValidationError("Invalid time slot format.")
+
             if slot_time < now:
                 raise forms.ValidationError(
                     "You cannot book a time slot that has already passed today."
                 )
+
         return cleaned_data
