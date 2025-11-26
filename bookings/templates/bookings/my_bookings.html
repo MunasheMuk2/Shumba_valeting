@@ -30,12 +30,12 @@
       <td>{{ booking.package.name }}</td>
       <td>
         <!-- Edit button -->
-        <a href="{% url 'edit_booking' booking.id %}" class="btn btn-warning btn-sm">
+        <a href="{% url 'edit_booking' booking.id %}" class="btn btn-secondary">
           Edit
         </a>
       
         <!-- Cancel button -->
-        <a href="?cancel={{ booking.id }}" class="btn btn-danger btn-sm"
+        <a href="?cancel={{ booking.id }}" class="btn btn-dark"
            onclick="return confirm('Are you sure you want to cancel this booking?');">
            Cancel
         </a>
