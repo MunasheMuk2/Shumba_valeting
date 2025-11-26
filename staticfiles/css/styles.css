@@ -286,12 +286,8 @@ margin-left:21rem;
 
 /* Edit page */
 
-/* --------------------------
-   EDIT BOOKING PAGE STYLING
---------------------------- */
-
 /* Page header */
-h2 {
+.edit-header {
     text-align: center;
     font-weight: 700;
     margin-top: 40px;
