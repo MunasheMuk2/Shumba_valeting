@@ -222,7 +222,7 @@ Valeting{% endblock %}
     <p>
       This form is for <strong>car valeting only</strong>.<br>
       For other vehicles, please
-      <a href="/contact"><strong>contact us</strong></a>
+      <a href="{% url 'contact' %}"><strong>contact us</strong></a>
     </p>
     {% csrf_token %} {{ form.as_p }}
     <button type="submit" class="btn btn-primary w-100 mt-2">
