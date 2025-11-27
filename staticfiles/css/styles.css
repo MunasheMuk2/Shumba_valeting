@@ -331,17 +331,6 @@ margin-left:21rem;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Error styling */
-.errorlist {
-    color: #c62828 !important;
-    background: #ffebee;
-    padding: 10px 12px;
-    border-radius: 6px;
-    list-style: none;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
 /* Buttons */
 #edit-booking-form button.btn-dark {
     width: 100%;
@@ -363,6 +352,18 @@ margin-left:21rem;
     text-align: center;
 }
 
+/* Error styling */
+.errorlist {
+    color: #c62828 !important;
+    background: #ffebee;
+    padding: 10px 12px;
+    border-radius: 6px;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
 /* Flash message styling */
 #edit-booking-messages .alert {
     max-width: 600px;
@@ -380,9 +381,9 @@ margin-left:21rem;
 .alert-success,
 .alert-warning,
 .alert-info {
-    background: #000 !important;   /* black background */
-    color: #fff !important;        /* white text */
-    border: 1px solid #333 !important;
+    background: #C0C0C0 !important;     /* accessible silver */
+    color: #000 !important;              /* high-contrast black text */
+    border: 1px solid #7a7a7a !important;/* darker grey border for visibility */
     padding: 12px 14px !important;
     border-radius: 6px !important;
     font-size: 15px !important;
