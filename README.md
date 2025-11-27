@@ -52,7 +52,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ##  Navigation Bar
 
-- Placed at the top of every page, with links to **Home**, **Services**, **Contact**, **Sign up**, **login** and **Booking**.  
+- Placed at the top of every page, with links to **Home**, **Services**, **Contact**, **Sign up** and **login**.  
 - Fully responsive across desktop and mobile.  
 - On mobile, the navigation bar collapses into a **burger menu** for easier navigation.  
 
@@ -65,7 +65,7 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 **Features:**
 
 - Brand introduction with clear messaging.  
--  Call-to-action buttons directing users to the **Booking** form.  
+-  Call-to-action 'book now' button directing users to the **Booking** form.  
 
 ![Home Page](screenshots/homepage.jpg)
 
@@ -93,14 +93,14 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 
 ---
 
-##  Booking Page
+##  My Bookings Page
 
 **Features:**
 
-- Booking form connected to the database.  
+- Connected to the booking form database.  
 - Prevents **duplicate time slots** from being booked.  
 - Provides **success/error feedback** upon submission.  
-- Allows users to cancel bookings or go to the editing page 
+-  Allows authenticated user to cancel bookings or go to the editing page 
 
 ![Booking Page](screenshots/bookingpage.jpg)
 
@@ -109,12 +109,27 @@ Designed the site so the purpose of the site is **clear to first-time visitors**
 **Features:**
 
 
-- Allows admins or authenticated users to modify existing bookings.
+- Allows authenticated users to modify existing bookings.
 - Validates updated date, time slot, and service package.
 - Prevents booking conflicts (date + time_slot).
 - Saves changes and provides clear success/error feedback.
 
 ![Edit Page](screenshots/editpage.jpg)
+
+---
+
+## Admin Page
+
+**Features:**
+
+
+- Add new users, Edit user details,Set permissions.
+- View and add new bookings, Edit existing bookings and Delete bookings.
+- View and add new packages, Edit pricing (e.g., change £25 to £30), Delete packages and Manage displayed names/descriptions.
+- Viewing messages sent from the website, See name, email, message content and delete messages.
+
+
+![Edit Page](screenshots/adminpage.jpg)
 
 ---
 
@@ -174,7 +189,7 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 - Duplicate booking attempts rejected gracefully with error message.  
 
 ### CRUD Testing
-- Added, updated, and deleted bookings. 
+- Added, viewed, updated and deleted bookings. 
 - Verified CRUD operations reflected immediately in UI.  
 
 ### Responsive Testing
@@ -206,14 +221,14 @@ The system uses Django ORM with models mapped to **SQLite (development)** / **Po
 ## Deployment
 
 ### Local Deployment
-git clone https://github.com/MunasheMuk2/Shumba_valeting.git
-cd shumba-valeting
-python -m venv venv
-venv\Scripts\activate      
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
+- git clone https://github.com/MunasheMuk2/Shumba_valeting.git
+- cd shumba-valeting
+- python -m venv venv
+- venv\Scripts\activate      
+- pip install -r requirements.txt
+- python manage.py migrate
+- python manage.py createsuperuser
+- python manage.py runserver
 
 ---
 
@@ -370,8 +385,7 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 ## Site Owner / Admin
 | User Story        | Test Action                  | Expected Result                                                | Status |
 |-------------------|------------------------------|----------------------------------------------------------------|--------|
-| Add/edit/delete services | Django Admin → Services | CRUD operations reflected instantly on `/services`             | Yes |
-| Manage bookings   | Django Admin → Bookings       | View/edit/delete entries; unique constraint enforced           | Yes |
+| Manage bookings   | Django Admin → Bookings       | View/edit/delete entries                                       | Yes |
 
 ---
 
