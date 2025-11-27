@@ -15,12 +15,15 @@ def home(request):
                 if request.user.is_authenticated:
                     booking.user = request.user
                 booking.save()
-                messages.success(request, "Booking confirmed! Thank you.")
+                messages.success(
+                    request, "Booking confirmed! Thank you.", extra_tags="booking"
+                )
                 return redirect("home")  # Prevent resubmission
             except IntegrityError:
                 messages.error(
                     request,
                     "Sorry, this time slot is already booked. Please select another time.",
+                    extra_tags="booking",
                 )
                 return render(request, "home.html", {"form": form})
     else:
@@ -38,10 +41,12 @@ def my_bookings(request):
         try:
             booking = Booking.objects.get(id=cancel_id, user=request.user)
             booking.delete()
-            messages.success(request, "Booking cancelled successfully.")
+            messages.success(
+                request, "Booking cancelled successfully.", extra_tags="booking"
+            )
             return redirect("my_bookings")
         except Booking.DoesNotExist:
-            messages.error(request, "Booking not found.")
+            messages.error(request, "Booking not found.", extra_tags="booking")
 
     return render(request, "bookings/my_bookings.html", {"bookings": bookings})
 
@@ -54,11 +59,15 @@ def edit_booking(request, booking_id):
         if form.is_valid():
             try:
                 form.save()
-                messages.success(request, "Booking updated successfully.")
+                messages.success(
+                    request, "Booking updated successfully.", extra_tags="booking"
+                )
                 return redirect("my_bookings")
             except IntegrityError:
                 messages.error(
-                    request, "That time slot is already taken. Please choose another."
+                    request,
+                    "That time slot is already taken. Please choose another.",
+                    extra_tags="booking",
                 )
     else:
         form = BookingUpdateForm(instance=booking)
