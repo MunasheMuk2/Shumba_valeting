@@ -331,17 +331,6 @@ margin-left:21rem;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Error styling */
-.errorlist {
-    color: #c62828 !important;
-    background: #ffebee;
-    padding: 10px 12px;
-    border-radius: 6px;
-    list-style: none;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
 /* Buttons */
 #edit-booking-form button.btn-dark {
     width: 100%;
@@ -373,32 +362,39 @@ margin-left:21rem;
     text-align: center;
 }
 
-/* Django messages with "error" or "booking error" tag */
-.alert,
+.errorlist {
+    background: #ffebee !important;  /* very light red background */
+    color: #c62828 !important;       /* red text */
+    padding: 10px 12px;
+    border-radius: 6px;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #c62828;
+}
+
+/* ERROR messages (Django + Bootstrap) */
+.alert-danger,
 .alert-error,
-.alert-danger {
-    color: #c62828 !important;
-    background: #ffebee !important;
-    border: 1px solid #c62828 !important;
-    padding: 12px 14px !important;
+.errorlist,
+.alert.alert-danger,
+.alert.alert-error {
+    background: #c62828 !important;   /* strong red */
+    color: #ffffff !important;
+    border: 1px solid #8e0000 !important;
+    padding: 12px 16px !important;
     border-radius: 6px !important;
-    font-size: 15px !important;
-    margin-bottom: 12px !important;
 }
 
-/* Remove Bootstrap's default shadow + green/blue colors */
+/* SUCCESS messages (Django + Bootstrap) */
 .alert-success,
-.alert-warning,
-.alert-info {
-    box-shadow: none !important;
+.alert.alert-success {
+    background: #2e7d32 !important;   /* pleasant deep green */
+    color: #ffffff !important;
+    border: 1px solid #1b5e20 !important;
+    padding: 12px 16px !important;
+    border-radius: 6px !important;
 }
-
-.alert-success {
-    color: #1b5e20 !important;
-    background: #e8f5e9 !important;
-    border: 1px solid #2e7d32 !important;
-}
-
 
 /* Accordion */
 
