@@ -405,9 +405,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
      - No errors or warnings were found when passing through the official W3C validator.
 
-      #### Vehicle guide Page
+      #### Services Page
    
-    ![Vehicle guide Page HTML Validator](screenshots/servicesvalidator.jpg).
+    ![Services Page HTML Validator](screenshots/servicesvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
@@ -419,16 +419,29 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
  #### My Bookings Page
    
-   ![Edit Page HTML Validator](screenshots/bookingsvalidator.jpg).
+   ![Booking  Page HTML Validator](screenshots/bookingsvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
- #### Contact sucess Page
+ #### Edit Page
    
    ![Edit Page HTML Validator](screenshots/editvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
+#### Login Page
+   
+   ![Login Page HTML Validator](screenshots/loginvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+#### Logout Page
+   
+   ![Logout Page HTML Validator](screenshots/logoutvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+     
 
 
     
