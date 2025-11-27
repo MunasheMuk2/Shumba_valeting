@@ -376,29 +376,19 @@ margin-left:21rem;
 /* ERROR messages (Django + Bootstrap) */
 .alert,
 .alert-error,
-.alert-danger {
-    background: #ffebee !important;
-    color: #c62828 !important;
-    border: 1px solid #c62828 !important;  
+.alert-danger,
+.alert-success,
+.alert-warning,
+.alert-info {
+    background: #000 !important;   /* black background */
+    color: #fff !important;        /* white text */
+    border: 1px solid #333 !important;
     padding: 12px 14px !important;
     border-radius: 6px !important;
     font-size: 15px !important;
     margin-bottom: 12px !important;
-}
-
-/* remove default styling from other types */
-.alert-success,
-.alert-warning,
-.alert-info {
     box-shadow: none !important;
 }
-
-/* SUCCESS messages: GREEN */
-.alert-success {
-    color: #1b5e20 !important;
-    background: #e8f5e9 !important;
-    border: 1px solid #2e7d32 !important;
-
 
 /* Accordion */
 
