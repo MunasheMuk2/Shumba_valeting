@@ -417,9 +417,15 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
      - No errors or warnings were found when passing through the official W3C validator.
 
+ #### My Bookings Page
+   
+   ![Edit Page HTML Validator](screenshots/bookingsvalidator.jpg).
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
  #### Contact sucess Page
    
-   ![Contact sucess Page HTML Validator](screenshots/successvalidator.jpg).
+   ![Edit Page HTML Validator](screenshots/editvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
