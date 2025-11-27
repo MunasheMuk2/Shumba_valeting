@@ -20,8 +20,6 @@
 <form method="post" id="edit-booking-form">
     {% csrf_token %}
     {{ form.as_p }}
-
-    <span id="id_password_helptext" hidden></span>
     
     <button type="submit" class="btn btn-dark">Save Changes</button>
     <a href="{% url 'my_bookings' %}" class="btn btn-secondary">Back</a>

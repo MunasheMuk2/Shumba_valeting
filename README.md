@@ -407,7 +407,7 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
       #### Vehicle guide Page
    
-    ![Vehicle guide Page HTML Validator](screenshots/vehicleguidevalidator.jpg).
+    ![Vehicle guide Page HTML Validator](screenshots/servicesvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
