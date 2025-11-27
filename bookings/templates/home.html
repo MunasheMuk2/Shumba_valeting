@@ -1,83 +1,92 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block title %}Home - Shumba Valeting{% endblock %}
+{% extends "base.html" %} {% load static %} {% block title %}Home - Shumba
+Valeting{% endblock %} 
 
 {% block content %}
-
-<!-- INTRO SECTION -->
 <section class="main-section">
   <h2 class="visually-hidden">Introduction</h2>
-
   <p class="main-text">
     Skip the car wash queues — no more tedious trips to your local car wash.
     Simply reserve your bespoke mobile car valet and the Shumba Valeting team
     will arrive at your home or office to give your car a flawless, showroom
     finish.
   </p>
-
   <button
     class="main-button"
-    aria-label="Scroll to the booking section"
     onclick="document.getElementById('bottom').scrollIntoView({ behavior: 'smooth' });"
   >
     Book Now
   </button>
 </section>
 
-
-<!-- GALLERY -->
 <section class="gallery">
   <h2 class="visually-hidden">Gallery</h2>
-
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
     </div>
-
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static 'images/brush.jpg' %}"
-             class="d-block w-100"
-             alt="Close-up of a car being scrubbed with a detailing brush during an exterior wash.">
+        <img
+          src="{% static 'images/brush.jpg' %}"
+          class="d-block w-100"
+          alt="Close-up of a car being scrubbed with a detailing brush during an interior clean."
+        >
       </div>
-
       <div class="carousel-item">
-        <img src="{% static 'images/outside.png' %}"
-             class="d-block w-100"
-             alt="Mobile valeting team cleaning a car outside a customer’s home.">
+        <img
+          src="{% static 'images/outside.png' %}"
+          class="d-block w-100"
+          alt="Mobile valeting team cleaning a car outside a customer’s home."
+        >
       </div>
-
       <div class="carousel-item">
-        <img src="{% static 'images/client.png' %}"
-             class="d-block w-100"
-             alt="Satisfied client inspecting their freshly valeted car with a technician.">
+        <img
+          src="{% static 'images/client.png' %}"
+          class="d-block w-100"
+          alt="Satisfied client inspecting their freshly valeted car with a technician."
+        >
       </div>
     </div>
-
-    <button class="carousel-control-prev" type="button"
-            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"
-            aria-label="Previous slide">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-
-    <button class="carousel-control-next" type="button"
-            data-bs-target="#carouselExampleIndicators" data-bs-slide="next"
-            aria-label="Next slide">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
 </section>
 
-
-<!-- BENEFITS -->
 <section class="benefits py-5 text-center">
   <div class="container">
     <h2 class="mb-4">Why Book Our Mobile Valeting Service?</h2>
@@ -93,125 +102,104 @@
   </div>
 </section>
 
-
-<!-- MAIN SERVICES -->
 <section class="main-services">
-  <h2>Our Services</h2>
-
+  <h2>Our services</h2>
   <div class="container my-4 text-center">
     <div class="row">
-
-      <div class="col-md-4 text-center">
-        <h3 class="services">Exterior valeting</h3>
-        <figure>
-          <img src="{% static 'images/car-image.png' %}"
-               class="img-fluid rounded mb-2"
-               alt="Icon of a car exterior representing exterior valeting services">
-        </figure>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <h3 class="services">Interior valeting</h3>
-        <figure>
-          <img src="{% static 'images/seat.png' %}"
-               class="img-fluid rounded mb-2"
-               alt="Icon of a car seat representing interior valeting services">
-        </figure>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <h3 class="services">Engine valeting</h3>
-        <figure>
-          <img src="{% static 'images/engine.png' %}"
-               class="img-fluid rounded mb-2"
-               alt="Icon of a car engine representing engine bay cleaning services">
-        </figure>
-      </div>
-
+      <figure class="col-md-4">
+        <figcaption><h2 class="services">Exterior valeting</h2></figcaption>
+        <img
+          src="{% static 'images/car image.png' %}"
+          class="img-fluid rounded mb-2"
+          alt="Icon of a car exterior representing exterior valeting services"
+        >
+      </figure>
+      <figure class="col-md-4">
+        <figcaption><h2 class="services">Interior valeting</h2></figcaption>
+        <img
+          src="{% static 'images/seat.png' %}"
+          class="img-fluid rounded mb-2"
+          alt="Icon of a car seat representing interior valeting services"
+        >
+      </figure>
+      <figure class="col-md-4">
+        <figcaption><h2 class="services">Engine valeting</h2></figcaption>
+        <img
+          src="{% static 'images/engine.png' %}"
+          class="img-fluid rounded mb-2"
+          alt="Icon of a car engine representing engine bay cleaning services"
+        >
+      </figure>
     </div>
   </div>
 </section>
 
-
-<!-- FAQ -->
-<section class="questions" aria-labelledby="faq-heading">
-  <h2 id="faq-heading">FAQ</h2>
-
+<section class="questions">
   <div class="row justify-content-center">
     <div class="col-md-6">
-
+      <!-- Frequently asked questions and answers section-->
       <div class="faq">
-
-        <p>Here are some answers to commonly asked questions about mobile valeting.</p>
-
-        <!-- ACCORDION 1 -->
-        <button class="accordion"
-                aria-expanded="false"
-                aria-controls="panel1"
-                id="accordion1">
-          Do I need to provide parking?
-        </button>
-        <div class="panel" id="panel1" role="region" aria-labelledby="accordion1">
-          <p>Yes. Our team needs enough working space.</p>
+        <h2>FAQ</h2>
+        <p>
+          Here are some answers to commonly asked questions about mobile
+          valeting.
+        </p>
+        <button class="accordion">Do I need to provide parking?</button>
+        <div class="panel">
+          <p>
+            Yes. While our teams are more than happy to clean your car wherever
+            you are, they will need sufficient space to complete the job. Please
+            ensure there’s room for our professionals to work.
+          </p>
         </div>
-
-        <!-- ACCORDION 2 -->
-        <button class="accordion"
-                aria-expanded="false"
-                aria-controls="panel2"
-                id="accordion2">
-          Do I have to provide water?
-        </button>
-        <div class="panel" id="panel2" role="region" aria-labelledby="accordion2">
-          <p>Most washers bring their own water, but some may require access.</p>
+        <button class="accordion">Do I have to provide water?</button>
+        <div class="panel">
+          <p>
+            The majority of our onboarded washers will provide water for your
+            valet or detail. However, there maybe some who will require access
+            to water. You can filter your results to only show operators who
+            provide water.
+          </p>
         </div>
-
-        <!-- ACCORDION 3 -->
-        <button class="accordion"
-                aria-expanded="false"
-                aria-controls="panel3"
-                id="accordion3">
+        <button class="accordion">
           Can I leave a review for my car washer?
         </button>
-        <div class="panel" id="panel3" role="region" aria-labelledby="accordion3">
-          <p>Yes! We encourage reviews after your wash.</p>
+        <div class="panel">
+          <p>
+            Yes! We encourage every customer to leave a review after your car
+            wash.
+          </p>
         </div>
-
-        <!-- ACCORDION 4 -->
-        <button class="accordion"
-                aria-expanded="false"
-                aria-controls="panel4"
-                id="accordion4">
+        <button class="accordion" id="third">
           Do I have to provide electricity?
         </button>
-        <div class="panel" id="panel4" role="region" aria-labelledby="accordion4">
-          <p>No, power is provided unless exceptional circumstances exist.</p>
+        <div class="panel">
+          <p>
+            No, we will provide power for your valet or detail. However, there
+            maybe the odd exception when we may require access to electricity.
+          </p>
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- Form-->
 
-<!-- BOOKING INTRO -->
-<section class="booking-intro">
-  <h2 class="booking-header" id="bottom">Let’s Get You Booked</h2>
-  <p class="booking-tagline">
-    Experience premium car care without leaving your driveway. <br>Choose your booking method:
-  </p>
-</section>
+<h2 class="booking-header" id="bottom">Let’s Get You Booked</h2>
+<p class="booking-tagline">
+  Experience premium car care without leaving your driveway. <br />Choose your
+  booking method:
+</p>
 
-
-<!-- BOOKING SECTION -->
 <section class="schedule">
   <div class="schedule-header">
-    <h2 class="schedule-title">Schedule Your Appointment Today</h2>
-
-    <a href="https://wa.me/447700900123?text=Hi%20Shumba%20Valeting,%20I%20would%20like%20to%20book%20a%20valet."
-       target="_blank"
-       class="whatsapp-button">
+    <h2 class="schedule-title">Schedule Your Appointment today</h2>
+    <a
+      href="https://wa.me/447700900123?text=Hi%20Shumba%20Valeting,%20I%20would%20like%20to%20book%20a%20valet."
+      target="_blank"
+      class="whatsapp-button"
+    >
       <i class="fab fa-whatsapp"></i> Book via WhatsApp
     </a>
   </div>
@@ -226,42 +214,43 @@
         {% endif %}
       {% endfor %}
     {% endif %}
-  </div>
+</div>
+  
 
   <form method="post" id="booking-form" class="booking-form">
     <h2>Online Booking Form</h2>
     <p>
-      This form is for <strong>car valeting only</strong>.<br>
+      This form is for <strong>car valeting only</strong>.<br />
       For other vehicles, please
-      <a href="{% url 'contact' %}"><strong>contact us</strong></a>.
+      <a href="/contact"><strong>contact us</strong></a>
     </p>
-
-    {% csrf_token %}
-    {{ form.as_p }}
-
-    <button type="submit" class="btn btn-primary w-100 mt-2">Submit Booking</button>
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="btn btn-primary w-100 mt-2">
+      Submit Booking
+    </button>
   </form>
 </section>
 
-
-<!-- SCROLL BEHAVIOR SCRIPT -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-
       // Detect Django form field errors
       const formErrors = document.querySelector(".booking-form .errorlist");
-
+  
       // Detect Django messages
       const msgErrors = document.querySelector("#form-messages .alert");
-
+  
       if (formErrors || msgErrors) {
           const formSection = document.getElementById("booking-form");
           formSection.scrollIntoView({ behavior: "smooth", block: "start" });
-
+  
+          // Focus first invalid field (optional)
           const invalidField = document.querySelector(".errorlist + input, .errorlist + select");
-          if (invalidField) invalidField.focus();
+          if (invalidField) {
+              invalidField.focus();
+          }
       }
   });
-</script>
+  </script>
+
 
 {% endblock %}
