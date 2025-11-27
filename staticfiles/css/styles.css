@@ -373,6 +373,32 @@ margin-left:21rem;
     text-align: center;
 }
 
+/* Django messages with "error" or "booking error" tag */
+.alert,
+.alert-error,
+.alert-danger {
+    color: #c62828 !important;
+    background: #ffebee !important;
+    border: 1px solid #c62828 !important;
+    padding: 12px 14px !important;
+    border-radius: 6px !important;
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+}
+
+/* Remove Bootstrap's default shadow + green/blue colors */
+.alert-success,
+.alert-warning,
+.alert-info {
+    box-shadow: none !important;
+}
+
+.alert-success {
+    color: #1b5e20 !important;
+    background: #e8f5e9 !important;
+    border: 1px solid #2e7d32 !important;
+}
+
 
 /* Accordion */
 
